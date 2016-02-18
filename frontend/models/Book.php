@@ -75,7 +75,7 @@ class Book extends \yii\db\ActiveRecord
     public function getlinkurl()
     {
         //thuc hien chon bai viet hien thi
-        $actual_link = $this->title_seo;
+        $actual_link = "/".$this->title_seo;
        
         return $actual_link;
     }
