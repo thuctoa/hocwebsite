@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://hocwebsite.org/</title>
+  <link>http://hocwebsite.org/</link>
+
+<item>
+     <link>http://hocwebsite.org/</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/site/login</link>
+     <title>Login</title>
+     <description>Login</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/site/signup</link>
+     <title>Signup</title>
+     <description>Signup</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/lap-trinh-huong-doi-tuong-oop-cac-khai-niem-interface-va-abstract</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/khai-niem-va-thuc-hanh-html-css-va-javascript</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/kiem-soat-truy-cap-va-chong-tan-cong-ddos</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/khai-niem-ngon-ngu-php</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/cai-dat-ide-netbeans-phuc-vu-viet-ma-php</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/sao-luu-va-phuc-hoi-du-lieu-bao-tri-server</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/quan-ly-sub-version-voi-git</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/quan-tri-server-linux</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/giao-tiep-giua-php-va-mysql</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/cai-dat-localhost-voi-xampp</link>
+     <title>Học Website</title>
+     <description>Học Website</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://hocwebsite.org/site/request-password-reset</link>
+     <title>Request password reset</title>
+     <description>Request password reset</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
