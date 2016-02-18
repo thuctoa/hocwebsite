@@ -45,10 +45,10 @@ $this->title = Yii::t('app','Học Website');
                     }
                 ?>
                 
-                <?php if(isset($_GET['baiviet'])){
+                <?php if(isset($baiviet)){
                 ?>
                 <div class="row tin-dau">
-                    <div class="col-sm-4 nenanhminhhoa">
+                    <div class="col-sm-4">
                         <img src="../uploads/<?=$baiviet['img']?>" alt="<?=$baiviet['title']?>" class="anhminhhoa">
                     </div>
                     <div class="col-sm-8 ">
@@ -79,7 +79,7 @@ $this->title = Yii::t('app','Học Website');
                 ?>
                     <a href="<?=$model->getlinkurl()?>">
                         <div class="row tin">
-                            <div class="col-sm-4 nenanhminhhoa">
+                            <div class="col-sm-4">
                                 <img src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
                             </div>
                             <div class="col-sm-8">
