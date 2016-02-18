@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://hocwebsite.org/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/site/login</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/site/signup</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/lap-trinh-huong-doi-tuong-oop-cac-khai-niem-interface-va-abstract</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/khai-niem-va-thuc-hanh-html-css-va-javascript</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/kiem-soat-truy-cap-va-chong-tan-cong-ddos</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/khai-niem-ngon-ngu-php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/cai-dat-ide-netbeans-phuc-vu-viet-ma-php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/sao-luu-va-phuc-hoi-du-lieu-bao-tri-server</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/quan-ly-sub-version-voi-git</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/quan-tri-server-linux</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/giao-tiep-giua-php-va-mysql</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/cai-dat-localhost-voi-xampp</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://hocwebsite.org/site/request-password-reset</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
