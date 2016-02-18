@@ -16,9 +16,6 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-    <meta name="robots" content="noindex" />
-    <meta name="googlebot" content="noindex">
-    <meta name="googlebot-news" content="nosnippet">
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
