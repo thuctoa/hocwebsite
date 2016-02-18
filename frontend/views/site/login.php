@@ -36,15 +36,15 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="form-group">
             <?= Html::submitButton('Đăng nhập', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
             <?php
-                $facebook= AuthChoice::begin([
-                    'baseAuthUrl' => ['site/auth'],
-                    //'popupMode' => false,
-                ]);
-                foreach ($facebook->getClients() as $client){
-                    $facebook->clientLink($client,Html::tag('span', '', ['class' => 'auth-icon ' . $client->getName()]));
-                    break;
-                }
-                AuthChoice::end();
+//                $facebook= AuthChoice::begin([
+//                    'baseAuthUrl' => ['site/auth'],
+//                    //'popupMode' => false,
+//                ]);
+//                foreach ($facebook->getClients() as $client){
+//                    $facebook->clientLink($client,Html::tag('span', '', ['class' => 'auth-icon ' . $client->getName()]));
+//                    break;
+//                }
+//                AuthChoice::end();
             ?>
         </div>
 
