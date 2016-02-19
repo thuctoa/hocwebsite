@@ -10,6 +10,7 @@ $this->title = Yii::t('app','Học Website');
     <?php 
     if(!empty($baiviet)){
         $id=$baiviet['id'];
+        $this->title = $baiviet['title'];
     ?>
         <div class="col-lg-8 ">
             <div class="noidung"> 
@@ -20,6 +21,7 @@ $this->title = Yii::t('app','Học Website');
                 <div class=" tieude-chinh">
                     <h1>
                         <?=$baiviet['title']?>
+                        
                     </h1>
                     <img src="/img/logo-nav.png" alt="<?=$baiviet['title']?>" />
                     <hr>
