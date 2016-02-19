@@ -49,4 +49,10 @@ class Urlseo {
         $str = str_replace(" ", "-", str_replace("&*#39;","",$str));
         return $str;
     }
+    public function thoigian($time){
+        return  ' Ngày '.gmdate("d",$time).
+                ' tháng '.gmdate("m",$time).
+                ' năm '.gmdate("Y",$time).
+                ' vào lúc '.gmdate("H:i:s",$time);
+    }
 }

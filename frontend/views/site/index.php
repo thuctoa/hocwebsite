@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\LinkPager;
+use common\seo\Urlseo;
 $this->title = Yii::t('app','Học Website');
 
 ?>
@@ -62,7 +63,7 @@ $this->title = Yii::t('app','Học Website');
                         <?=$baiviet['title']?>
                         </p>
                         <p class="thoigian">
-                        <?= gmdate("d-m-Y H:i:s",$baiviet['time_new'])?>
+                            <?= Urlseo::thoigian($baiviet['time_new'])?>
                         </p>
                         <?php
                             if(Yii::$app->user->can('permission_monitor')){
@@ -90,7 +91,9 @@ $this->title = Yii::t('app','Học Website');
                             </div>
                             <div class="col-sm-8">
                                 <p class="tieude-tin"><?=$model['title']?></p>
-                                <p class="thoigian"><?=gmdate("d-m-Y H:i:s", $model['time_new'])?></p>
+                                <p class="thoigian">
+                                    <?= Urlseo::thoigian($model['time_new'])?>
+                                </p>
                             </div>
                         </div>
                     </a>
@@ -133,7 +136,8 @@ $this->title = Yii::t('app','Học Website');
                         return Html::a(
                                 '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
                                 '<p class="thoigian">'.
-                                gmdate("d-m-Y H:i:s", $data->time_new).
+                                Urlseo::thoigian($data->time_new)
+                                .
                                 '</p>',
                                 $url, ['title' => 'Xem bài viết']
                                 ); 
@@ -164,7 +168,8 @@ $this->title = Yii::t('app','Học Website');
                                     Html::a(
                                     '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
                                     '<p class="thoigian">'.
-                                    gmdate("d-m-Y H:i:s", $data->time_new).
+                                    Urlseo::thoigian($data->time_new)
+                                    .
                                     '</p>',
                                     $url, ['title' => 'Xem bài viết']
                                     );
