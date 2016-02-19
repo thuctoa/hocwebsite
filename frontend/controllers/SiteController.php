@@ -110,7 +110,7 @@ class SiteController extends Controller
                 $user->first_name = 'guest';
             }
             $user->last_name = '';
-            if($attributes['email']){
+            if(isset($attributes['email'])){
                 $user->email = $attributes['email'];
             }else{
                 $user->email = 'example@gmail.com';
