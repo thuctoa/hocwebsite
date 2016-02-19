@@ -106,7 +106,7 @@ AppAsset::register($this);
                     
                     Yii::$app->user->isGuest ?
                         ['label' => Yii::t('app','Đăng nhập'), 'url' => ['/site/login']] :
-                        ['label' => Yii::t('app','Đăng xuất').' (' . Yii::$app->user->identity->butdanh . ')',
+                        ['label' => Yii::t('app','Đăng xuất').' (' . Yii::$app->user->identity->displayname . ')',
                             'url' => ['/site/logout'],
                             'linkOptions' => ['data-method' => 'post']],
                     Yii::$app->user->isGuest ?

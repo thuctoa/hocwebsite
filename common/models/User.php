@@ -125,7 +125,7 @@ class User extends ActiveRecord implements IdentityInterface
         return $this->getPrimaryKey();
     }
     
-    public function getButdanh(){
+    public function getDisplayname(){
         return $this->first_name.' '.$this->last_name;
     }
     /**

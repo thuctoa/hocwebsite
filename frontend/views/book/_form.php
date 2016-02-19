@@ -22,7 +22,7 @@ use dosamigos\ckeditor\CKEditor;
         if ( Yii::$app->user->can('permission_monitor') 
             ||  Yii::$app->user->can('permission_admin')){
             
-            echo $form->field($model, 'user_id')->dropDownList(ArrayHelper::map(User::find()->select(['username','first_name','last_name','id'])->all(), 'id', 'butdanh'),['class' => 'form-control inline-block']); 
+            echo $form->field($model, 'user_id')->dropDownList(ArrayHelper::map(User::find()->select(['username','first_name','last_name','id'])->all(), 'id', 'displayname'),['class' => 'form-control inline-block']); 
             echo $form->field($model, 'isbn')->dropDownList(['2' => 'PROTECTED', '1' => 'YES','0'=>'NO']);
 
         }
