@@ -46,7 +46,17 @@ class SignupForm extends Model
             ['password', 'string', 'min' => 6],
         ];
     }
-
+    public function attributeLabels()
+    {
+        return [
+            'first_name' => Yii::t('app', 'Họ'),
+            'last_name' => Yii::t('app', 'Tên'),
+            'username' => Yii::t('app', 'Tên tài khoản'),
+            'email' => Yii::t('app', 'Địa chỉ Email'),
+            'phone_number' => Yii::t('app', 'Số điện thoại'),
+            'password' => Yii::t('app', 'Mật khẩu'),
+        ];
+    }
     /**
      * Signs user up.
      *

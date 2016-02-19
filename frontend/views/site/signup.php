@@ -7,13 +7,13 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Signup';
+$this->title = 'Đăng ký tài khoản';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-signup">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to signup:</p>
+    <p>Hãy điền đẩy đủ vào các trường sau để đăng ký tài khoản mới:</p>
 
     <div class="row ">
         <div class="col-lg-offset-4 col-lg-4">
@@ -45,8 +45,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 
 
             <div class="form-group">
-                <div class="col-lg-offset-0 col-lg-5">
-                <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+                <div class="dangkytaikhoan">
+                <?= Html::submitButton('Đăng ký tài khoản', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
                
             </div>

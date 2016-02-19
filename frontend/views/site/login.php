@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\authclient\widgets\AuthChoice;
 
-$this->title = 'Login';
+$this->title = 'Đăng nhập';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
