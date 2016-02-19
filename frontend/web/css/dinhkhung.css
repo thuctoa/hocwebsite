@@ -284,6 +284,10 @@
     font-size: 24px;
     font-weight: normal;
 }
+.tieude-chinh>hr{
+    margin-top: 0;
+    
+}
 .binhluan{
     margin-top: 10px;
     background-color: #FFF;
