@@ -14,13 +14,12 @@ $this->title = Yii::t('app','Học Website');
             <div class="noidung"> 
                 <div class="modau">
                     <?=$baiviet['description']?>
-                    <h1 class="text-center tieude-chinh">
+                    <h1 class="text-center tieude-chinh text_noidung">
                         <?=$baiviet['title']?>
                     </h1>
                 </div>
                 <div class="noidung-chinh">
-                    
-                    <p >
+                    <p class="text_noidung">
                         <?=$baiviet['body']?>
                     </p>
                     <hr>

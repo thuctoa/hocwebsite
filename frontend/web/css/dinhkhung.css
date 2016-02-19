@@ -193,8 +193,8 @@
     border-bottom: none;
 }
 .noidung-chinh{
-   // padding-left: 9vw;
-   // padding-right:  6vw;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .upanh{
     padding: 10px;
