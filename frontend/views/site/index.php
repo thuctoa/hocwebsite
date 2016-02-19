@@ -19,7 +19,8 @@ $this->title = Yii::t('app','Học Website');
                     </h1>
                 </div>
                 <div class="noidung-chinh">
-                    <p class="text_noidung">
+                    <hr>
+                    <p>
                         <?=$baiviet['body']?>
                     </p>
                     <hr>
