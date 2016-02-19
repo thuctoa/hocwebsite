@@ -12,9 +12,25 @@ $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
-
+    <h1>
+    <?= Html::encode($this->title) ?>
+    
+    </h1>
+    <div class="dangnhapfacbook">
+    <?php
+        $facebook= AuthChoice::begin([
+            'baseAuthUrl' => ['site/auth'],
+            //'popupMode' => false,
+        ]);
+        foreach ($facebook->getClients() as $client){
+            $facebook->clientLink($client,Html::tag('span', '', ['class' => 'auth-icon ' . $client->getName()]));
+            break;
+        }
+        AuthChoice::end();
+    ?>
+    </div>
     <p>Bạn hãy điền đẩy đủ thông tin yêu cầu để đăng nhập</p>
+    
     <div class="dangnhap">
         <?php $form = ActiveForm::begin([
             'id' => 'login-form',
@@ -35,17 +51,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="form-group">
             <?= Html::submitButton('Đăng nhập', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-            <?php
-//                $facebook= AuthChoice::begin([
-//                    'baseAuthUrl' => ['site/auth'],
-//                    //'popupMode' => false,
-//                ]);
-//                foreach ($facebook->getClients() as $client){
-//                    $facebook->clientLink($client,Html::tag('span', '', ['class' => 'auth-icon ' . $client->getName()]));
-//                    break;
-//                }
-//                AuthChoice::end();
-            ?>
         </div>
 
         <?php ActiveForm::end(); ?>

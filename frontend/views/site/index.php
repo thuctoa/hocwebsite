@@ -16,17 +16,19 @@ $this->title = Yii::t('app','Học Website');
                     <?=$baiviet['description']?>
                     
                 </div>
-                <h1 class="text-center tieude-chinh">
-                    <?=$baiviet['title']?>
+                <div class=" tieude-chinh">
+                    <h1>
+                        <?=$baiviet['title']?>
+                    </h1>
+                    <img src="/img/logo-nav.png" alt="<?=$baiviet['title']?>" />
                     <hr>
-                </h1>
+                </div>
+                
                 <div class="noidung-chinh">
                     <p>
                         <?=$baiviet['body']?>
                     </p>
                     <hr>
-                    
-                    
                 </div>
                 <div class="binhluan">
                     <div 

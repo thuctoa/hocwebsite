@@ -129,12 +129,6 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    
-    public function actionTest($id=0){
-        if($id){
-            echo $id;
-        }
-    }
     public function actionIndex($id=0)
     {
         $searchModel = new BookSearch();
