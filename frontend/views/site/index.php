@@ -14,24 +14,28 @@ $this->title = Yii::t('app','Học Website');
             <div class="noidung"> 
                 <div class="modau">
                     <?=$baiviet['description']?>
-                    <h1 class="text-center tieude-chinh text_noidung">
-                        <?=$baiviet['title']?>
-                    </h1>
+                    
                 </div>
-                <div class="noidung-chinh">
+                <h1 class="text-center tieude-chinh">
+                    <?=$baiviet['title']?>
                     <hr>
+                </h1>
+                <div class="noidung-chinh">
                     <p>
                         <?=$baiviet['body']?>
                     </p>
                     <hr>
-                    <div 
-                        class="fb-comments"
-                        data-numposts="5"
-                        width="100%"
-                        data-order-by="reverse_time"
-                    >
-                    </div>
                     
+                    
+                </div>
+                <div class="binhluan">
+                    <div 
+                            class="fb-comments "
+                            data-numposts="5"
+                            width="100%"
+                            data-order-by="reverse_time"
+                        >
+                    </div>
                 </div>
             </div>
         </div>
