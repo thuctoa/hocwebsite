@@ -58,8 +58,8 @@ return [
                 'facebook' => [
                     'class' => 'yii\authclient\clients\Facebook',
                     'authUrl' => 'https://www.facebook.com/dialog/oauth?display=popup',
-                    'clientId' => '1542847739375184',
-                    'clientSecret' => '5dbaced6369ad1c146559eb14c52a4af',
+                    'clientId' => '213920512290093',
+                    'clientSecret' => 'a2e2aabb1e34e9ce0099193afc1c1f32',
                 ],
             ],
         ],
