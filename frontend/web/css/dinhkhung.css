@@ -59,14 +59,12 @@
     padding: 0;
 }
 .noidung{
-    min-height: 500px;
     margin-left: -12px;
     margin-right:  -12px;
     //font-family: Cambria;
     font-size: 16px;
 }
 .bantin{
-    min-height: 500px;
     background-color: #FFF;
     margin-left: -10px;
     margin-right:  -13px;
@@ -111,7 +109,6 @@
 }
 #trangchu{
     width: 90%;
-    min-height: 500px;
     background-color: #fff;
     margin: 0 auto;
     padding-left: 15px;
@@ -134,27 +131,7 @@
     background-color: transparent;
     color: #333;
 }
-.menudoc{
-    position: fixed;
-    left: 0;
-    width: 200px;
-    background: #fff;
-    border: 0;
-    top:50px;
-    padding: 15px 20px;
-    min-height: 100vh;
-    font-size: 13px;
-    border-right:  1px solid #ccc;
-}
-.menudoc>ul>li>a{
-    border-radius: 0;
-    padding: 4px 15px; 
-    color: #222;
-}
-.menudoc>.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
-    background: #cc181e;
-    color: #fff;
-}
+
 .anhlogo{
     margin-top: 2px;
 }
