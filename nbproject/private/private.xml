@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/projects/hocwebsite/frontend/views/book/_form.php</file>
+            <file>file:/home/projects/hocwebsite/common/seo/Urlseo.php</file>
+            <file>file:/home/projects/hocwebsite/common/models/LoginForm.php</file>
+            <file>file:/home/projects/hocwebsite/frontend/views/site/login.php</file>
             <file>file:/home/projects/hocwebsite/frontend/views/site/index.php</file>
+            <file>file:/home/projects/hocwebsite/frontend/models/SignupForm.php</file>
         </group>
     </open-files>
 </project-private>
