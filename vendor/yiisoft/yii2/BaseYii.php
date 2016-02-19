@@ -464,7 +464,7 @@ class BaseYii
      */
     public static function powered()
     {
-        return 'Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>';
+        return 'Phát triễn bởi <a href="https://www.facebook.com/thuc.nguyenthe.14" rel="external">Nguyễn Thế Thức</a>';
     }
 
     /**

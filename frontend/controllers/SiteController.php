@@ -189,7 +189,7 @@ class SiteController extends Controller
                 'model'=>$model,
             ]);
         }else{
-            return $this->redirect('login.html');
+            return $this->redirect('login');
         }
     }
     public function actionUser(){
@@ -201,7 +201,7 @@ class SiteController extends Controller
             ]);
         }
         else{
-            return $this->redirect('login.html');
+            return $this->redirect('login');
         }
     }
     /**
