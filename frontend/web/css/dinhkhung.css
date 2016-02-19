@@ -10,6 +10,7 @@
     padding-top: 60px;
     word-wrap: break-word;
     font-size: 13px;
+    
 }
 .container{
     width: 100%
@@ -289,7 +290,7 @@
     
 }
 .binhluan{
-    margin-top: 10px;
+    margin: 10px 0;
     background-color: #FFF;
 }
 .dangnhapfacbook{
