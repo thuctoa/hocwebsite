@@ -1,7 +1,7 @@
 <table class="thongtincanhan">
     <tr>
         <th>Tên tài khoản</th>
-        <th>Tên đầy đủ</th>
+        <th>Họ và tên</th>
         <th>Địa chỉ Email</th>
         <th>Số điện thoại</th>
     </tr>
