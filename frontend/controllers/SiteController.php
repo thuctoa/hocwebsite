@@ -87,7 +87,7 @@ class SiteController extends Controller
         die(print_r($attributes));
         */
         $user = FALSE;
-        if($attributes['email']){
+        if(isset($attributes['email'])){
             $user = \common\models\User::find()->where(['email'=>$attributes['email']])->one();
         }else{
             $user = \common\models\User::find()->where(['username'=>$attributes['id']])->one();
