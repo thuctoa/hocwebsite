@@ -12,7 +12,7 @@ $this->title = Yii::t('app','Học Website');
         $id=$baiviet['id'];
         $this->title = $baiviet['title'];
     ?>
-        <div class="col-lg-8 ">
+        <div class="col-md-8">
             <div class="noidung"> 
                 <div class="modau">
                     <?=$baiviet['description']?>
@@ -44,7 +44,7 @@ $this->title = Yii::t('app','Học Website');
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 ">
+        <div class="col-md-4 ">
             <div class="bantin">
                 <?php
                     function myUrlEncode($string) {
@@ -60,7 +60,7 @@ $this->title = Yii::t('app','Học Website');
                     <div class="col-sm-4">
                         <img src="../uploads/<?=$baiviet['img']?>" alt="<?=$baiviet['title']?>" class="anhminhhoa">
                     </div>
-                    <div class="col-sm-8 ">
+                    <div class="col-sm-8 tin-phai">
                         <p class="tieude-tin">
                         <?=$baiviet['title']?>
                         </p>
@@ -91,7 +91,7 @@ $this->title = Yii::t('app','Học Website');
                             <div class="col-sm-4">
                                 <img src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
                             </div>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 tin-phai">
                                 <p class="tieude-tin"><?=$model['title']?></p>
                                 <p class="thoigian">
                                     <?= Urlseo::thoigian($model['time_new'])?>
