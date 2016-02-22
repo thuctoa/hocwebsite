@@ -16,7 +16,7 @@ $this->title = Yii::t('app','Học Website');
             <div class="noidung"> 
                 <div class="modau">
                     <?=$baiviet['description']?>
-                    
+                    <meta name="keywords" content="<?=$baiviet['title']?>">
                 </div>
                 <div class=" tieude-chinh">
                     <h1>

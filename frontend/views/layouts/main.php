@@ -17,6 +17,10 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="description" content="Hướng dẫn lập trình học website mã nguồn mở PHP">
+    <meta name="keywords" content="Học website, học lập trình php, thiết kế website, 
+          khóa học lập trình php miễn phí">
+    <meta name="author" content="Hege Refsnes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="fb:app_id" content="213920512290093" />
     <?= Html::csrfMetaTags() ?>
