@@ -133,7 +133,16 @@ AppAsset::register($this);
                 $items[] = ['label' => Yii::t('app','Viết bài mới'), 'url' => ['/book/create']];
             }
             if ( Yii::$app->user->can('permission_admin') ){
-                $items[] = ['label' => Yii::t('app','Phân quyền'), 'url' => ['/admin/admin/assignment']];
+                 $items[] = [
+                                'label' => Yii::t('app','Tác vụ'),
+                                    'items' => [
+                                        ['label' => Yii::t('app','Phân quyền'),'url'=>['/admin/admin/assignment']],
+                                        '<li class="divider"></li>',
+                                        '<li class="dropdown-header">Upload, remove, view Image</li>',
+                                        ['label' => Yii::t('app','Uploads ảnh'), 'url' => '/book/upload'],
+                                    ],
+
+                            ];
             }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
