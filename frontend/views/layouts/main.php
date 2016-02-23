@@ -138,8 +138,6 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $items,
             ]);
-            
-            
             NavBar::end();
         ?>
         <div class="content" id="content">
