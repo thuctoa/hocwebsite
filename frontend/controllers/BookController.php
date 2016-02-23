@@ -139,6 +139,11 @@ class BookController extends Controller
         }  
         return $this->render('upload');
     }
+    public function actionRemoveimg($val){
+        @unlink(getcwd().'/'.$val);
+        
+        return $this->redirect(['upload']);
+    }
 
     /**
      * Finds the Book model based on its primary key value.

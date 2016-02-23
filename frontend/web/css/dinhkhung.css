@@ -305,3 +305,9 @@
     width: 30vw;
     margin: auto;
 }
+.book-anh{
+    border: 1px solid #333;
+    width: 120px;
+    float: left;
+    margin: 5px;
+}
