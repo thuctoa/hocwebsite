@@ -12,11 +12,10 @@ echo \kato\DropZone::widget([
            'removedfile' => "function(file){alert(file.name + ' đã được xóa')}"
        ],
    ]);
-
-?>
-<div class="upanh">
-    <?php
     $files=\yii\helpers\FileHelper::findFiles('uploads');
+?>
+    <?php
+    
     foreach ($files as $val){
     ?>
     <div class="book-anh">
@@ -24,13 +23,13 @@ echo \kato\DropZone::widget([
             <img class="upanhcuthe" src="/<?=$val?>" width="100" height="100"/>
         </a>
         <span class="glyphicon glyphicon-remove">
-            <a  href="/book/removeimg?val=<?=$val?>">
-                Xóa ảnh 
-            </a>
+            
         </span>
+        <a  href="/book/removeimg?val=<?=$val?>" onClick="return confirm('Bạn có muốn chắc xóa ảnh này không?')">
+            Xóa ảnh này
+        </a>
     </div>  
         
     <?php
     }
     ?>
-</div>
