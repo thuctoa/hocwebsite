@@ -15,9 +15,9 @@ $this->title = Yii::t('app','Học Website');
         <div class="col-md-8">
             <div class="noidung"> 
                 <div class="modau">
-                    <?=$baiviet['description']?>
+                    <?=$baiviet['video']?>
                     <meta name="keywords" content="<?=$baiviet['title']?>">
-                    <meta name="description" content="<?=$baiviet['body']?>">
+                    <meta name="description" content="<?=$baiviet['description']?>">
                 </div>
                 <div class=" tieude-chinh">
                     <h1>

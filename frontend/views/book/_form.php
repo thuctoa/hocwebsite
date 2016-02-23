@@ -41,9 +41,11 @@ use dosamigos\ckeditor\CKEditor;
         }
     ?>
     <?= $form->field($model, 'img')->fileInput() ?>
-
-    <?= $form->field($model, 'description')->textInput() ?>
             
+    <?= $form->field($model, 'video')->textInput() ?> 
+            
+    <?= $form->field($model, 'description')->textInput() ?>
+           
     <?= $form->field($model, 'body')->widget(CKEditor::className(), [
             'options' => ['rows' => 12],
             'preset' => 'advanced'
