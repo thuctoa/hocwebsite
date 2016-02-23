@@ -129,17 +129,17 @@ AppAsset::register($this);
                             
                         ], 
                 ];
-            if ( Yii::$app->user->can('permission_monitor') ){
-                $items[] = ['label' => Yii::t('app','Viết bài mới'), 'url' => ['/book/create']];
-            }
             if ( Yii::$app->user->can('permission_admin') ){
                  $items[] = [
                                 'label' => Yii::t('app','Tác vụ'),
                                     'items' => [
-                                        ['label' => Yii::t('app','Phân quyền'),'url'=>['/admin/admin/assignment']],
-                                        '<li class="divider"></li>',
-                                        '<li class="dropdown-header">Upload, remove, view Image</li>',
+                                        ['label' => Yii::t('app','Viết bài mới'), 'url' => ['/book/create']],
                                         ['label' => Yii::t('app','Uploads ảnh'), 'url' => '/book/upload'],
+                                        '<li class="divider"></li>',
+                                        '<li class="dropdown-header">Phân quyền người dùng</li>',
+                                        ['label' => Yii::t('app','Phân quyền'),'url'=>['/admin/admin/assignment']],
+                                        
+                                        
                                     ],
 
                             ];
