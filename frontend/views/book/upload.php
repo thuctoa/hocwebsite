@@ -1,6 +1,5 @@
 <?php
-use kato\DropZone;
-echo DropZone::widget([
+echo \kato\DropZone::widget([
        'options' => [
             'url'=>'/book/upload.html',
             'maxFilesize' => '20',
