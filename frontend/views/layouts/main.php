@@ -11,6 +11,7 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+\Yii::$app->name="Học Website";
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
