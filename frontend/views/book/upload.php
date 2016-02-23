@@ -1,7 +1,7 @@
 <?php
 echo \kato\DropZone::widget([
        'options' => [
-            'url'=>'/book/upload.html',
+            'url'=>'/book/upload',
             'maxFilesize' => '20',
            'dictDefaultMessage'=>'Click vào đây để đưa ảnh lên Server',
        ],
