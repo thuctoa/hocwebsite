@@ -1,5 +1,5 @@
 <?php
-use \kato\DropZone;
+use kato\DropZone;
 echo DropZone::widget([
        'options' => [
             'url'=>'/book/upload.html',
