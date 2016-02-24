@@ -138,10 +138,7 @@ AppAsset::register($this);
                                         '<li class="divider"></li>',
                                         '<li class="dropdown-header">Phân quyền người dùng</li>',
                                         ['label' => Yii::t('app','Phân quyền'),'url'=>['/admin/admin/assignment']],
-                                        
-                                        
                                     ],
-
                             ];
             }
             echo Nav::widget([
