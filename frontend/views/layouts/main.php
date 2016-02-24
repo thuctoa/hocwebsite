@@ -14,6 +14,25 @@ AppAsset::register($this);
 <?php 
     $this->beginPage() 
 ?>
+<?php
+   ob_start ("ob_gzhandler");
+   header ("content-type: text/css; charset: UTF-8");
+   header ("cache-control: must-revalidate");
+   $offset = 48 * 60 * 60;
+   $expire = "expires: " . gmdate ("D, d M Y H:i:s", time() + $offset) . " GMT";
+   header ($expire);
+?>
+<?php
+if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip'))
+	ob_start("ob_gzhandler");
+else
+	ob_start();
+header ("content-type: text/html; charset: UTF-8");
+header ("cache-control: must-revalidate");
+echo  $offset = 48 * 60 * 60;
+$expire = "expires: " . gmdate ("D, d M Y H:i:s", time() + $offset) . " GMT";
+header ($expire);
+?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
