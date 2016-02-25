@@ -145,9 +145,7 @@
    font-size: 13px;
    font-weight: bold;
 }
-#timkiem{
-    width: 30vw;
-}
+
 #timkiem>input{
     height: 30px;
     border-radius: 0;
