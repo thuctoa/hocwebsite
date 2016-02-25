@@ -68,6 +68,10 @@ return [
             'site/signup',
             'site/login',
             'site/logout',
+            'site/request-password-reset',
+            'site/reset-password',
+            'site/update-user',
+            'site/user'
         ],
     ],
     'params' => $params,
