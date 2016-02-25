@@ -187,7 +187,7 @@ class SiteController extends Controller
                 // file is uploaded successfully
                 Yii::$app->getSession()->setFlash('success', [
                     'type' => 'success',
-                    'duration' => 10000,
+                    'duration' => 5000,
                     'icon' => 'fa fa-users',
                     'message' => 'Tệp tin của bạn chúng tôi đã nhận,'
                     . ' và chúng tôi sẽ phản hồi lại cho bạn trong thời gian sớm nhất.',
