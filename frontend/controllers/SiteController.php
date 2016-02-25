@@ -196,6 +196,7 @@ class SiteController extends Controller
                     'positonX' => 'left'
                 ]);
             }
+            return $this->redirect('upload');
         }
 
         return $this->render('upload', ['model' => $model]);
