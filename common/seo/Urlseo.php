@@ -53,6 +53,9 @@ class Urlseo {
         return  ' Ngày '.gmdate("d",$time).
                 ' tháng '.gmdate("m",$time).
                 ' năm '.gmdate("Y",$time).
-                ' vào lúc '.gmdate("H:i:s",$time);
+                ' vào lúc '.gmdate("H",$time).
+                ' giờ '.gmdate("i",$time).
+                ' phút '.gmdate("s",$time).
+                ' giây ';
     }
 }

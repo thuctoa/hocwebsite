@@ -17,6 +17,8 @@ echo \kato\DropZone::widget([
     <?php
     
     foreach ($files as $val){
+        $val1=explode("/",$val);
+            if(!isset($val1[2])){
     ?>
     <div class="book-anh">
         <a  href="/<?=$val?>">
@@ -31,5 +33,6 @@ echo \kato\DropZone::widget([
     </div>  
         
     <?php
+            }
     }
     ?>

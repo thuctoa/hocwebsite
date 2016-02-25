@@ -116,7 +116,7 @@
     width: 90%;
     background-color: #fff;
     margin: 0 auto;
-    padding-left: 15px;
+    padding: 15px;
 }
 #content{
     width: 100%;
@@ -324,4 +324,18 @@
 }
 .upload input{
      margin: 0 auto;
+}
+.book-tep{
+    border: 1px solid black;
+    margin: 15px;
+    background: rgba(0,0,0,0.2);
+}
+.book-tep>col-sm-3 >a {
+    margin-top: 30px;
+}
+.tai-xoa{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid black;
+    background: #FFF;
 }

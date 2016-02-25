@@ -176,12 +176,12 @@ class SiteController extends Controller
     }
     public function actionUpload()
     {
-        $model = new UploadForm();
-
-        if (Yii::$app->request->isPost) {
-            if (!file_exists('uploads/'.Yii::$app->user->id.'/')) {
+        if (!file_exists('uploads/'.Yii::$app->user->id.'/')) {
                 mkdir('uploads/'.Yii::$app->user->id.'/', 0777, true);
-            }
+        }
+        $model = new UploadForm();
+        if (Yii::$app->request->isPost) {
+            
             $model->imageFiles = UploadedFile::getInstances($model, 'imageFiles');
             if ($model->upload()) {
                 // file is uploaded successfully
@@ -201,6 +201,11 @@ class SiteController extends Controller
         }
 
         return $this->render('upload', ['model' => $model]);
+    }
+    public function actionRemoveimg($val){
+        @unlink(getcwd().'/'.$val);
+        
+        return $this->redirect(['upload']);
     }
      public function actionUpdateUser(){
         if(Yii::$app->user->id){
