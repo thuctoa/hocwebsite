@@ -10,7 +10,7 @@ return [
     
     'sourceLanguage'=> 'vi',
     'language'=> 'vi',
-    
+    'timezone' =>'Asia/Ho_Chi_Minh',
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],

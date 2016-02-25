@@ -1,7 +1,6 @@
 <?php 
 /* @var $this \yii\web\View */
 /* @var $content string */
-date_default_timezone_set('Asia/Ho_Chi_Minh');
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;

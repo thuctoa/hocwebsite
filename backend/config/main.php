@@ -7,6 +7,7 @@ $params = array_merge(
 );
 
 return [
+    'timezone' =>'Asia/Ho_Chi_Minh',
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',

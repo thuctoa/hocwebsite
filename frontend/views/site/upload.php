@@ -55,7 +55,9 @@ $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']])
                 </div>
             </div>
             <div class="col-sm-2 tai-xoa">
-                <?=Urlseo::thoigian($val2[0])?>
+                <?php
+                    echo Urlseo::thoigian($val2[0]);
+                ?>
             </div>
         </div>  
 

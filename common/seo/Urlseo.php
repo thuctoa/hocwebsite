@@ -50,12 +50,12 @@ class Urlseo {
         return $str;
     }
     public function thoigian($time){
-        return  ' Ngày '.gmdate("d", strtotime($time)).
-                ' tháng '.gmdate("m",strtotime($time)).
-                ' năm '.gmdate("Y",$time).
-                ' vào lúc '.gmdate("H",strtotime($time)).
-                ' giờ '.gmdate("i",strtotime($time)).
-                ' phút '.gmdate("s",strtotime($time)).
-                ' giây ';
+        return  ' Ngày '.date("d", $time).
+                ' tháng '.date("m",$time).
+                ' năm '.date("Y",$time).
+                ' vào lúc '.date("H",$time).
+                ' giờ '.date("i",$time).
+                ' phút '.date("s",$time).
+                ' giây';
     }
 }

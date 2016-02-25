@@ -195,8 +195,6 @@ class SiteController extends Controller
                     'positonY' => 'top',
                     'positonX' => 'left'
                 ]);
- 
-                return $this->redirect('index');
             }
         }
 
