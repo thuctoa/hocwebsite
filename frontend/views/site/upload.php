@@ -33,7 +33,7 @@ $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']])
         foreach ($files as $key=>$val){
             $val1=explode("/",$val);
             if(isset($val1[2])){
-                $val2=explode("_",$val1[2]);
+                $val2=explode("^",$val1[2]);
         ?>
         <div class="row book-tep">
             <div class="col-sm-1 tai-xoa text-primary">

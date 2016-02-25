@@ -30,7 +30,7 @@ class UploadForm extends Model
     {
         if ($this->validate()) { 
             foreach ($this->imageFiles as $file) {
-                $file->saveAs('uploads/'.Yii::$app->user->id.'/' .time().'_'.$file->baseName . '.' . $file->extension);
+                $file->saveAs('uploads/'.Yii::$app->user->id.'/' .time().'^'.$file->baseName . '.' . $file->extension);
             }
             return true;
         } else {
