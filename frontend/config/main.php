@@ -7,7 +7,7 @@ $params = array_merge(
 );
 
 return [
-    
+    'name'=>'Học Website',
     'sourceLanguage'=> 'vi',
     'language'=> 'vi',
     'timezone' =>'Asia/Ho_Chi_Minh',
