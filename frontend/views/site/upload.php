@@ -45,7 +45,7 @@ $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']])
             <div class="col-sm-5">
                 <div class="row tai-xoa">
                     <a  href="/<?=$val?>">
-                        <span class="glyphicon glyphicon-download-alt"> <?=$val1[2]?></span>
+                        <span class="glyphicon glyphicon-download-alt"> <?=$val2[1]?></span>
                     </a>
                 </div>
                 <div class="row tai-xoa">
