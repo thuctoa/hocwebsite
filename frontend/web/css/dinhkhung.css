@@ -317,3 +317,11 @@
 .book-anh> a{
     color: #FFF;
 }
+.upload{
+    width: 50%;
+    margin: auto;
+    background: #FFF;
+}
+.upload input{
+     margin: 0 auto;
+}

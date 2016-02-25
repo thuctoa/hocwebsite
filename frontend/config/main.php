@@ -7,6 +7,10 @@ $params = array_merge(
 );
 
 return [
+    
+    'sourceLanguage'=> 'vi',
+    'language'=> 'vi',
+    
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -60,7 +64,10 @@ return [
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            'site/*',
+            'site/index',
+            'site/signup',
+            'site/login',
+            'site/logout',
         ],
     ],
     'params' => $params,

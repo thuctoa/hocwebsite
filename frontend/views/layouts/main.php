@@ -105,18 +105,15 @@ AppAsset::register($this);
                         </span>
                     </div>
                 </form>';
-            $items = [
-                   // ['label' => Yii::t('app','Trang chủ'), 'url' => ['/site/index']],
-                    //['label' => Yii::t('app','Giới thiệu'), 'url' => ['/site/about']],
-                    //['label' => Yii::t('app','Liên hệ'), 'url' => ['/site/contact']],
-                    
-                    Yii::$app->user->isGuest ?
-                        ['label' => Yii::t('app','Đăng nhập'), 'url' => ['/site/login']] :
-                        ['label' => Yii::t('app','Đăng xuất').' (' . Yii::$app->user->identity->displayname . ')',
-                            'url' => ['/site/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
-                    Yii::$app->user->isGuest ?
-                        ['label' => Yii::t('app','Tạo tài khoản'), 'url' => ['/site/signup']] :
+            $items = [];
+            if(Yii::$app->user->isGuest){
+                $items  =   [
+                                ['label' => Yii::t('app','Đăng nhập'), 'url' => ['/site/login']],
+                                ['label' => Yii::t('app','Tạo tài khoản'), 'url' => ['/site/signup']],
+                            ];
+            }else{
+                $items  =   [
+                        ['label' => Yii::t('app','Gửi bài tập'), 'url' => ['/site/upload']],
                         [
                             'label' => Yii::t('app','Thông tin cá nhân'),
                                 'items' => [
@@ -126,9 +123,13 @@ AppAsset::register($this);
                                     ['label' => Yii::t('app','Đổi thông tin'), 'url' => '/site/update-user'],
                                     ['label' => Yii::t('app','Đổi mật khẩu'),'url'=>['/site/request-password-reset']],
                                 ],
-                            
+
                         ], 
-                ];
+                        ['label' => Yii::t('app','Đăng xuất').' (' . Yii::$app->user->identity->displayname . ')',
+                            'url' => ['/site/logout'],
+                            'linkOptions' => ['data-method' => 'post']],
+                    ];
+            }
             if ( Yii::$app->user->can('permission_admin') ){
                  $items[] = [
                                 'label' => Yii::t('app','Tác vụ'),
@@ -153,6 +154,28 @@ AppAsset::register($this);
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 ]); 
             ?>
+            <div class="success-flash">
+      
+            <?php foreach (Yii::$app->session->getAllFlashes() as $message):; ?>
+            <?php
+            echo \kartik\widgets\Growl::widget([
+                'type' => (!empty($message['type'])) ? $message['type'] : 'danger',
+                'title' => (!empty($message['title'])) ? Html::encode($message['title']) :Yii::$app->session->getFlash('success'),
+                'icon' => (!empty($message['icon'])) ? $message['icon'] : 'fa fa-info',
+                'body' => (!empty($message['message'])) ? Html::encode($message['message']) : Yii::$app->session->getFlash('success'),
+                'showSeparator' => true,
+                'delay' => 1, //This delay is how long before the message shows
+                'pluginOptions' => [
+                    'delay' => (!empty($message['duration'])) ? $message['duration'] : 3000, //This delay is how long the message shows for
+                    'placement' => [
+                        'from' => (!empty($message['positonY'])) ? $message['positonY'] : 'top',
+                        'align' => (!empty($message['positonX'])) ? $message['positonX'] : 'right',
+                    ]
+                ]
+            ]);
+            ?>
+        <?php endforeach; ?>
+            </div>
             <?= $content ?>
         </div>
         

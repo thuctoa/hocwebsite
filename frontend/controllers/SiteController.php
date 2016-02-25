@@ -16,6 +16,8 @@ use common\models\User;
 use app\models\Book;
 use app\models\BookSearch;
 use yii\data\Pagination;
+use app\models\UploadForm;
+use yii\web\UploadedFile;
 /**
  * Site controller
  */
@@ -171,6 +173,34 @@ class SiteController extends Controller
             'models' => $models,
             'pages' => $pages,
         ]);
+    }
+    public function actionUpload()
+    {
+        $model = new UploadForm();
+
+        if (Yii::$app->request->isPost) {
+            if (!file_exists('uploads/'.Yii::$app->user->id.'/')) {
+                mkdir('uploads/'.Yii::$app->user->id.'/', 0777, true);
+            }
+            $model->imageFiles = UploadedFile::getInstances($model, 'imageFiles');
+            if ($model->upload()) {
+                // file is uploaded successfully
+                Yii::$app->getSession()->setFlash('success', [
+                    'type' => 'success',
+                    'duration' => 10000,
+                    'icon' => 'fa fa-users',
+                    'message' => 'Tệp tin của bạn chúng tôi đã nhận,'
+                    . ' và chúng tôi sẽ phản hồi lại cho bạn trong thời gian sớm nhất.',
+                    'title' => 'Gửi bà tập của học viên '.Yii::$app->user->identity->displayname,
+                    'positonY' => 'top',
+                    'positonX' => 'left'
+                ]);
+ 
+                return $this->redirect('index');
+            }
+        }
+
+        return $this->render('upload', ['model' => $model]);
     }
      public function actionUpdateUser(){
         if(Yii::$app->user->id){
