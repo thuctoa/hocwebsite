@@ -71,7 +71,7 @@ $this->title = Yii::t('app','Học Website');
                         <?php
                             if(Yii::$app->user->can('permission_monitor')){
                         ?>
-                        <a href="/book/update?id=<?=$baiviet['id']?>">
+                        <a href="/book/update?id=<?=$baiviet['id']?>" title="<?=$baiviet['title']?>">
                             <span class="glyphicon glyphicon-pencil"></span>
                         </a>
                         <?php
@@ -87,7 +87,7 @@ $this->title = Yii::t('app','Học Website');
                 foreach ($models as $model) {
                     if($id!=$model['id']){
                 ?>
-                    <a href="<?=$model->getlinkurl()?>">
+                <a href="<?=$model->getlinkurl()?>" title="<?=$model['title']?>">
                         <div class="row tin">
                             <div class="col-sm-4">
                                 <img title="<?=$model['title']?>" src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
@@ -123,9 +123,9 @@ $this->title = Yii::t('app','Học Website');
                 [
                     'value' => function($data) {
                         $url = $data->linkurl;
-                        return Html::a(Html::img($data->imageurl,['width'=>200,'height'=>110,'alt'=>$data->title]),
+                        return Html::a(Html::img($data->imageurl,['title'=>$data->title,'width'=>200,'height'=>110,'alt'=>$data->title]),
                                 $url, [
-                                    'title' => 'Xem bài viết',
+                                    'title' => $data->title,
                                     
                                     ] );
                     },
@@ -142,7 +142,7 @@ $this->title = Yii::t('app','Học Website');
                                 Urlseo::thoigian($data->time_new)
                                 .
                                 '</p>',
-                                $url, ['title' => 'Xem bài viết']
+                                $url, ['title' => $data->title]
                                 ); 
                     },
                     'contentOptions'=>['style'=>'text-align: left;'], 
@@ -166,7 +166,7 @@ $this->title = Yii::t('app','Học Website');
                             return 
                                     Html::a('<p class="nenanhminhhoa">'.
                                             Html::img($data->imageurl
-                                                    ,['width'=>160,'height'=>110,'alt'=>$data->title]).'</p>',
+                                                    ,['width'=>160,'height'=>110,'alt'=>$data->title, 'title'=>$data->title]).'</p>',
                                     $url, ['title' => $data->title] ).
                                     Html::a(
                                     '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
@@ -174,7 +174,7 @@ $this->title = Yii::t('app','Học Website');
                                     Urlseo::thoigian($data->time_new)
                                     .
                                     '</p>',
-                                    $url, ['title' => 'Xem bài viết']
+                                    $url, ['title' => $data->title]
                                     );
                             },
                         'format' => 'raw',
