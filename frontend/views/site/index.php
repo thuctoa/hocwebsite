@@ -59,7 +59,7 @@ $this->title = Yii::t('app','Học Website');
                 ?>
                 <div class="row tin-dau">
                     <div class="col-sm-4">
-                        <img src="../uploads/<?=$baiviet['img']?>" alt="<?=$baiviet['title']?>" class="anhminhhoa">
+                        <img title="<?=$baiviet['title']?>" src="../uploads/<?=$baiviet['img']?>" alt="<?=$baiviet['title']?>" class="anhminhhoa">
                     </div>
                     <div class="col-sm-8 tin-phai">
                         <p class="tieude-tin">
@@ -90,7 +90,7 @@ $this->title = Yii::t('app','Học Website');
                     <a href="<?=$model->getlinkurl()?>">
                         <div class="row tin">
                             <div class="col-sm-4">
-                                <img src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
+                                <img title="<?=$model['title']?>" src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
                             </div>
                             <div class="col-sm-8 tin-phai">
                                 <p class="tieude-tin"><?=$model['title']?></p>
@@ -167,7 +167,7 @@ $this->title = Yii::t('app','Học Website');
                                     Html::a('<p class="nenanhminhhoa">'.
                                             Html::img($data->imageurl
                                                     ,['width'=>160,'height'=>110,'alt'=>$data->title]).'</p>',
-                                    $url, ['title' => 'Xem bài viết'] ).
+                                    $url, ['title' => $data->title] ).
                                     Html::a(
                                     '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
                                     '<p class="thoigian">'.
