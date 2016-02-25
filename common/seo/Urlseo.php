@@ -52,7 +52,7 @@ class Urlseo {
     public function thoigian($time){
         return  ' Ngày '.gmdate("d", strtotime($time)).
                 ' tháng '.gmdate("m",strtotime($time)).
-                ' năm '.gmdate("Y",strtotime($time)).
+                ' năm '.gmdate("Y",$time).
                 ' vào lúc '.gmdate("H",strtotime($time)).
                 ' giờ '.gmdate("i",strtotime($time)).
                 ' phút '.gmdate("s",strtotime($time)).
