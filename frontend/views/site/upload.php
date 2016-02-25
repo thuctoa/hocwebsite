@@ -56,9 +56,6 @@ $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']])
             </div>
             <div class="col-sm-2 tai-xoa">
                 <?=Urlseo::thoigian($val2[0])?>
-                <?php
-                    echo strtotime($val2[0]).' va '.$val2[0];
-                ?>
             </div>
         </div>  
 
