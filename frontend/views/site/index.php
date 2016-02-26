@@ -14,7 +14,7 @@ $this->title = Yii::t('app','Học Website');
     ?>
         <div class="col-md-8">
             <div class="noidung"> 
-                
+                <meta property="og:image" content="http://hocwebsite.org/uploas/<?=$baiviet['img']?>" />
                 <div class="modau">
                     <?=$baiviet['video']?>
                     <meta name="keywords" content="<?=$baiviet['title']?>">
