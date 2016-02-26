@@ -17,7 +17,7 @@ $this->title = Yii::t('app','Học Website');
                 
                 <div class="modau">
                     <?=$baiviet['video']?>
-                    <meta property="og:image" content="/uploads/<?=$baiviet['img']?>" />
+                    <meta property="og:image" content="/uploads/<?=$_SERVER['HTTP_HOST'].'/'.$baiviet['img']?>" />
                     <meta name="keywords" content="<?=$baiviet['title']?>">
                     <meta name="description" content="<?=$baiviet['description']?>">
                 </div>
