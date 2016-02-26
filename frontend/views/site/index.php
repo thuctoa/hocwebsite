@@ -9,7 +9,8 @@ $this->title = Yii::t('app','Học Website');
 <div class="row site-index">
     <?php 
     if(!empty($baiviet)){
-        \Yii::$app->params['img']=$baiviet['img'];
+        //share facebook meta image
+        \Yii::$app->params['baiviet']=$baiviet;
         $id=$baiviet['id'];
         $this->title = $baiviet['title'];
     ?>
