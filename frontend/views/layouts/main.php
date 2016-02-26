@@ -28,6 +28,9 @@ AppAsset::register($this);
             <meta property="og:image" content="http://hocwebsite.org/uploads/<?=\Yii::$app->params['baiviet']['img']?>" />
             <meta property="og:image:width" content="400" />
             <meta property="og:image:height" content="300" />
+            <meta property="og:title" content="<?=\Yii::$app->params['baiviet']['title']?>" />
+            <meta property="og:description" content="<?=\Yii::$app->params['baiviet']['description']?>" />
+            <meta property="og:url" content="http://hocwebsite.org/<?=\Yii::$app->params['baiviet']['title_seo']?>" />
     <?php  
         }
     ?>
