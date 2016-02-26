@@ -330,3 +330,9 @@
     border: 1px solid black;
     background: #FFF;
 }
+.tacgia{
+    position: absolute;
+    right: 10px;
+    float: right;
+    text-align: right;
+}

@@ -190,12 +190,15 @@ AppAsset::register($this);
     </div>
     <footer class="footer">
         <div class="container">
-            <span id="chuyentoike">
+            <span >
                 &copy; <?= \Yii::$app->name.' '.date('Y') ?>
             </span>
+            <span class="tacgia">
+                Phát triển bởi: 
             <a href='https://plus.google.com/117365335820918436212?rel=author' rel='author'>
-                @Nguyễn Thế Thức
+                Nguyễn Thế Thức
             </a>  
+            </span>>
         </div>
     </footer>
 
