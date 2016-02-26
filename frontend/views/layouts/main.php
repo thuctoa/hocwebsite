@@ -139,7 +139,7 @@ AppAsset::register($this);
                             'linkOptions' => ['data-method' => 'post']],
                     ];
             }
-            if ( Yii::$app->user->can('permission_admin') ){
+            if ( Yii::$app->user->can('permission_monitor') ){
                  $items[] = [
                                 'label' => Yii::t('app','Tác vụ'),
                                     'items' => [
