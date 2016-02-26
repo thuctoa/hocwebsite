@@ -185,9 +185,6 @@ AppAsset::register($this);
                 ?>
                 <?php endforeach; ?>
             </div>
-            <?php
-                include('common/snippets.php');
-            ?>
             <?= $content ?>
         </div>
         
