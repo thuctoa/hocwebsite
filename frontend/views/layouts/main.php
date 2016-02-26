@@ -22,12 +22,16 @@ AppAsset::register($this);
     <meta name="author" content="Nguyễn Thế Thức">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="fb:app_id" content="213920512290093" />
-    
+    <meta property="og:image" content="http://hocwebsite.org/uploads/<?=\Yii::$app->params['img']?>" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
 <body>
+      
+<div id="fb-root"></div>
 <script>
     
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -173,7 +177,6 @@ AppAsset::register($this);
                 <?php endforeach; ?>
             </div>
             <?= $content ?>
-            <div id="fb-root"></div>
         </div>
         
     </div>
