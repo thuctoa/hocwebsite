@@ -22,7 +22,8 @@ AppAsset::register($this);
     <meta name="author" content="Nguyễn Thế Thức">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="fb:app_id" content="213920512290093" />
-    <meta property="og:image" content="http://hocwebsite.org/uploas/php.png" />
+    <meta property="og:image" content="http://hocwebsite.org/uploads/php.png" />
+    
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
