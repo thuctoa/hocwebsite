@@ -38,8 +38,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
-      
+<body>   
 <div id="fb-root"></div>
 <script>
     
@@ -194,6 +193,9 @@ AppAsset::register($this);
             <span id="chuyentoike">
                 &copy; <?= \Yii::$app->name.' '.date('Y') ?>
             </span>
+            <a href='https://plus.google.com/117365335820918436212?rel=author' rel='author'>
+                @Nguyễn Thế Thức
+            </a>  
         </div>
     </footer>
 
