@@ -16,6 +16,7 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="msvalidate.01" content="B693FEE86D66E8587C4E1AA37056D47E" />
     <meta name="description" content="Hướng dẫn lập trình học website mã nguồn mở PHP">
     <meta name="keywords" content="Học website, học lập trình php, thiết kế website, 
           khóa học lập trình php miễn phí">
