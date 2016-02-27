@@ -134,14 +134,18 @@
     margin-top: 2px;
 }
 .tieude-tin-trangchu{
-   color: #167ac6;
-   font-size: 13px;
-   font-weight: bold;
-   height: 25px;
-   text-overflow: ellipsis;
-   width: 196px;
-   overflow: hidden;
-   white-space: nowrap;
+    color: #167ac6;
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+    max-width: 196px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.325;
+    text-overflow: ellipsis;
 }
 
 #timkiem>input{
