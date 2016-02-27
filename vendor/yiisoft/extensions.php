@@ -273,13 +273,4 @@ return array (
       '@kartik/widgets' => $vendorDir . '/kartik-v/yii2-widgets',
     ),
   ),
-  'rmrevin/yii2-minify-view' => 
-  array (
-    'name' => 'rmrevin/yii2-minify-view',
-    'version' => '1.9.4.0',
-    'alias' => 
-    array (
-      '@rmrevin/yii/minify' => $vendorDir . '/rmrevin/yii2-minify-view',
-    ),
-  ),
 );

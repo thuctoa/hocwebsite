@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1db33a5647c20f3f030c5704b7158cc4",
-    "content-hash": "e883a92cddfe7ff4f2d3cc8a1abfac8f",
+    "hash": "2cf45547f0799bd27f2afbcc48c3e81c",
+    "content-hash": "43fa0f8b96d11c29764b0315f51e7957",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -1554,51 +1554,6 @@
             "time": "2015-10-06 02:49:00"
         },
         {
-            "name": "mrclay/minify",
-            "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mrclay/minify.git",
-                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/3c11ba8232a2155a1a29552aafc528be5fb0a662",
-                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.2.1"
-            },
-            "require-dev": {
-                "tubalmartin/cssmin": "~2.4.8"
-            },
-            "suggest": {
-                "tubalmartin/cssmin": "Support minify with CSSMin (YUI PHP port)"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "min/lib/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Clay",
-                    "email": "steve@mrclay.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
-            "homepage": "http://code.google.com/p/minify/",
-            "time": "2014-10-30 22:58:02"
-        },
-        {
             "name": "perminder-klair/yii2-dropzone",
             "version": "dev-master",
             "source": {
@@ -1639,51 +1594,6 @@
                 "yii2"
             ],
             "time": "2015-11-09 11:28:44"
-        },
-        {
-            "name": "rmrevin/yii2-minify-view",
-            "version": "1.9.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rmrevin/yii2-minify-view.git",
-                "reference": "480b8def806e5bff2b579177f307da9df08dc20c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/480b8def806e5bff2b579177f307da9df08dc20c",
-                "reference": "480b8def806e5bff2b579177f307da9df08dc20c",
-                "shasum": ""
-            },
-            "require": {
-                "mrclay/minify": "~2.2",
-                "yiisoft/yii2": "2.0.*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "rmrevin\\yii\\minify\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Revin Roman",
-                    "email": "roman@rmrevin.com",
-                    "homepage": "https://rmrevin.com/"
-                }
-            ],
-            "description": "Yii2 View component with minification css & js",
-            "keywords": [
-                "JS",
-                "css",
-                "minify",
-                "view",
-                "yii2"
-            ],
-            "time": "2016-02-23 19:31:58"
         },
         {
             "name": "swiftmailer/swiftmailer",
