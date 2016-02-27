@@ -20,21 +20,21 @@ return [
         'assetManager' => [
             'class' => 'yii\web\AssetManager',
             'bundles' => [
-                        'yii\web\JqueryAsset' => [
-                            'js' => [
-                                YII_ENV_DEV ? 'jquery.min.js' : 'jquery.min.js'
-                            ]
-                        ],
-                        'yii\bootstrap\BootstrapAsset' => [
-                            'css' => [
-                                YII_ENV_DEV ? 'css/bootstrap.min.css' : 'css/bootstrap.min.css',
-                            ]
-                        ],
-                        'yii\bootstrap\BootstrapPluginAsset' => [
-                            'js' => [
-                                YII_ENV_DEV ? 'js/bootstrap.min.js' : 'js/bootstrap.min.js',
-                            ]
-                        ]
+                'yii\web\JqueryAsset' => [
+                    'js' => ['all.min.js'],
+                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [
+                        YII_ENV_DEV ? 'css/bootstrap.min.css' : 'css/bootstrap.min.css',
+                    ]
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => [
+                        YII_ENV_DEV ? 'js/bootstrap.min.js' : 'js/bootstrap.min.js',
+                    ]
+                ],
+                'yii\widgets\ActiveFormAsset' => false,
+                'yii\validators\ValidationAsset' => false,
             ],
         ],
         
