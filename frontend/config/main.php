@@ -21,14 +21,23 @@ return [
             'class' => 'yii\web\AssetManager',
             'appendTimestamp' => true,
             'bundles' => [
-                'yii\web\JqueryAsset' => false,
-                'yii\web\YiiAsset' => false,
+                'yii\web\JqueryAsset' => [
+                    'js' => [
+                        'jquery.min.js',
+                    ]
+                ],
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [
                         'css/bootstrap.min.css',
                     ]
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => FALSE
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => [ 
+                        'js/bootstrap.min.js',
+                    ]
+                ],
+                'yii\widgets\ActiveFormAsset' => false,
+                'yii\validators\ValidationAsset' => false,
                ],
         ],
         'user' => [
