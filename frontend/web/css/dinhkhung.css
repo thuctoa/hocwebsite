@@ -1,1 +1,331 @@
-.container,.content{width:100%}.wrap{margin:0;padding:60px 0 0;background:#f1f1f1;font-family:Roboto,arial,sans-serif;word-wrap:break-word;font-size:14px}.menu{background-color:#fff}.stylish-input-group .input-group-addon{background:#fff!important}.stylish-input-group .form-control{border-right:0;box-shadow:0 0 0;border-color:#ccc}.stylish-input-group button{border:0;background:0 0}.navbar-brand>img{margin-top:-15px}.footer{height:40px;margin:0;padding:10px 0;background-color:#fff}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{background-color:#00AEE8;color:#fff;font-weight:700}.navbar-default .navbar-nav>li>a{color:#f05;font-size:12px}.row{margin:0;padding:0}.noidung{margin-left:-12px;margin-right:-12px;font-size:14px;line-height:2}.bantin{background-color:#FFF;margin-left:-10px;margin-right:-13px;margin-bottom:10px}.tieude-tin{color:#333;font-size:13px;font-weight:600}.tin-phai{padding-left:35px}.thoigian{color:#767676;font-size:11px}.anhminhhoa{width:130px;height:70px;margin-left:-15px}#content,.anhchinh{width:100%}.bantin{padding:8px 16px}.table-trangchu>tbody>tr>td,.table-trangchu>tbody>tr>th,.table-trangchu>tfoot>tr>th,.table-trangchu>thead>tr>td,.table-trangchu>thead>tr>th,.table>tfoot>tr>td{border:none;padding:8px 0}.table-trangchu>thead{display:none}.tin-dau{margin-top:10px}.tin{margin:16px 0}.anhchinh{text-align:center}#trangchu{width:93%;background-color:#fff;margin:0 auto;padding:15px}.col-lg-15{width:20%;min-width:200px;height:200px}.bagach{padding:0 15px 10px;font-size:12px;color:#ccc}.bagach:hover{background-color:transparent;color:#333}.anhlogo{margin-top:2px}.tieude-tin-trangchu{color:#167ac6;font-size:13px;font-weight:700}#timkiem>input{height:30px;border-radius:0}#timkiem>span{padding:0;border-radius:0}#timkiem>input:focus{border:1px solid #4d90fe;box-sizing:border-box;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}.table-trangchu>tbody>tr{width:160px;float:left;margin:1.2%;height:200px}.noidung-chinh{background-color:#FFF;padding:15px}.upanh{padding:10px;background:#fff;border:5px outset #ccc}.upanhcuthe{margin:10px;border:1px solid #000}.fb-follow,.fb-share-button{top:-5px}.bangfacebook>tbody>tr>td{padding:0 10px}.pluginCountBox{background:#fff;border:1px solid #9197a3;border-radius:2px;color:#4e5665;font-size:13px;height:30px;margin:0;min-width:35px;padding:6px 1px 2px 3px;text-align:center;white-space:nowrap}.book-anh,.book-anh>a{color:#FFF}.pluginCountBoxNub{bottom:1px;height:7px;left:7px;position:relative;width:0;z-index:2}.pluginCountBoxNub i,.pluginCountBoxNub s{border-color:#9197a3 transparent transparent;border-right:5px solid transparent;border-style:solid;border-width:5px;display:block;position:relative}.pluginCountBoxNub i{border-top-color:#fff;left:0;top:-12px}.site-signup{text-align:center;background:#fff}.taotaikhoan{width:50vw;margin:0 auto;padding:15px}.site-login,.site-request-password-reset,.site-reset-password,.thaydoithongtin{text-align:center;background:#fff}.dangnhap,.matkhaumoi,.noidungthaydoithongtin,.thaydoimatkhau,.thaydoithongtinform{width:40vw;margin:0 auto;padding:15px}#tacgia{padding:0 10px;font-weight:700}.thongtincanhan{width:50vw;margin:0 auto;background:#fff;border:1px solid #e0dfe3;border-radius:5px;text-align:center}.thongtincanhan>tbody>tr>th{padding:15px;border:1px solid #e0dfe3;text-align:center}.thongtincanhan>tbody>tr>td{padding:50px 15px;border:1px solid #e0dfe3}.tieude-chinh{background-color:#FFF;margin-top:0;padding:15px;margin-bottom:10px}.tieude-chinh>h1{margin:0;line-height:normal;word-wrap:break-word;font-size:24px;font-weight:400}.tieude-chinh>hr{margin-top:0}.binhluan{margin:10px 0;background-color:#FFF}.dangnhapfacbook{width:32px;margin:auto}.doimatkhau{width:30vw;margin:auto}.book-anh{border:1px solid #333;width:120px;float:left;margin:5px;background:rgba(0,0,0,.5)}.book-tep,.tai-xoa{border:1px solid #000}.upload{width:50%;margin:auto;background:#FFF}.upload input{margin:0 auto}.book-tep{margin:15px;background:rgba(0,0,0,.2)}.book-tep>col-sm-3>a{margin-top:30px}.tai-xoa{margin:10px 0;padding:15px;background:#FFF}.tacgia{position:absolute;right:10px;float:right;text-align:right}
+.wrap{
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-family: Roboto,arial,sans-serif;
+    padding-top: 60px;
+    word-wrap: break-word;
+    font-size: 14px;
+    
+}
+.container{
+    width: 100%
+}
+.menu{
+    background-color: white;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.navbar-brand > img{
+    margin-top: -15px;
+    
+}
+.content{
+    width: 100%;
+}
+.footer{
+    height: 40px;
+    margin: 0px;
+    padding: 10px 0;
+    background-color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #00AEE8;
+    color: white;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #f05;
+    font-size: 12px;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.noidung{
+    margin-left: -12px;
+    margin-right:  -12px;
+    font-size: 14px;
+}
+.bantin{
+    background-color: #FFF;
+    margin-left: -10px;
+    margin-right:  -13px;
+    margin-bottom: 10px;
+}
+.tieude-tin{
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    
+}
+.tin-phai{
+    padding-left: 35px;
+}
+.thoigian{
+    color: #767676;
+    font-size: 11px;
+}
+.anhminhhoa{
+    width: 130px;
+    height: 70px;
+    margin-left: -15px;
+     
+}
+
+.bantin{
+    padding: 8px 16px;
+   
+}
+.table-trangchu > thead > tr > th, .table-trangchu > tbody > tr > th, .table-trangchu > tfoot > tr > th, .table-trangchu > thead > tr > td, .table-trangchu > tbody > tr > td, .table > tfoot > tr > td {
+    border: none;
+    padding: 8px 0;
+}
+.table-trangchu>thead{
+    display: none;
+}
+.tin-dau{
+    margin-top: 10px;
+}
+.tin{
+    margin: 16px 0;
+}
+.anhchinh{
+    text-align: center;
+    width: 100%;
+}
+#trangchu{
+    width: 93%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 15px;
+}
+#content{
+    width: 100%;
+}
+.col-lg-15{
+    width: 20%;
+    min-width:200px;
+    height: 200px;
+}
+.bagach{
+    padding:0px 15px 10px 15px;
+    font-size: 12px;
+    color: #ccc;
+    
+}
+.bagach:hover{
+    background-color: transparent;
+    color: #333;
+}
+
+.anhlogo{
+    margin-top: 2px;
+}
+.tieude-tin-trangchu{
+   color: #167ac6;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+#timkiem>input{
+    height: 30px;
+    border-radius: 0;
+}
+#timkiem>span{
+    padding: 0;
+    border-radius: 0;
+}
+#timkiem>input:focus{
+    border: 1px solid #4d90fe;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+}
+.table-trangchu>tbody>tr{
+    width: 160px;
+    float: left;
+    margin:1.2%;
+    height: 200px;
+}
+
+.noidung-chinh{
+    background-color: #FFF;
+    padding: 15px;
+}
+.upanh{
+    padding: 10px;
+    background: white;
+    border: 5px solid #ccc;
+    border-style: outset;
+}
+.upanhcuthe{
+    margin: 10px;
+    border: 1px solid black;
+}
+.fb-share-button{
+    top:-5px;
+}
+.fb-follow{
+    top:-5px;
+}
+.bangfacebook>tbody>tr>td{
+    padding: 0 10px;
+    
+}
+.pluginCountBox {
+    background: #fff;
+    border: 1px solid #9197a3;
+    border-radius: 2px;
+    color: #4e5665;
+    font-size: 13px;
+    height: 30px;
+    margin: 0;
+    min-width: 35px;
+    padding: 6px 1px 2px 3px;
+    text-align: center;
+    white-space: nowrap;
+}
+.pluginCountBoxNub {
+    bottom: 1px;
+    height: 7px;
+    left: 7px;
+    position: relative;
+    width: 0;
+    z-index: 2;
+}
+.pluginCountBoxNub s, .pluginCountBoxNub i {
+    border-color: #9197a3 transparent transparent;
+    border-right: 5px solid transparent;
+    border-style: solid;
+    border-width: 5px;
+    display: block;
+    position: relative;
+}
+.pluginCountBoxNub i {
+    border-top-color: #fff;
+    left: 0;
+    top: -12px;
+}
+.site-signup{
+    text-align: center;
+    background: white;
+}
+.taotaikhoan{
+    width: 50vw;
+    margin: 0 auto;
+    padding: 15px;
+}
+.thaydoithongtin,.site-reset-password, .site-request-password-reset, .site-login{
+    text-align: center;
+    background: white;
+}
+.thaydoithongtinform,.noidungthaydoithongtin,.matkhaumoi, .thaydoimatkhau, .dangnhap{
+    width: 40vw;
+    margin: 0 auto;
+    padding: 15px;
+}
+#tacgia{
+    padding: 0 10px;
+    font-weight: bold;
+}
+.thongtincanhan{
+    width: 50vw;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #e0dfe3;
+    border-radius: 5px;
+    text-align: center;
+}
+.thongtincanhan>tbody>tr>th{
+    padding: 15px;
+    border: 1px solid #e0dfe3;
+    text-align: center;
+}
+.thongtincanhan>tbody>tr>td{
+    padding: 50px 15px;
+    border: 1px solid #e0dfe3;
+}
+.noidung{
+    line-height: 2;
+}
+.tieude-chinh{
+    background-color: #FFF;
+    margin-top: 0;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.tieude-chinh>h1{
+    margin: 0;
+    line-height: normal;
+    word-wrap: break-word;
+    font-size: 24px;
+    font-weight: normal;
+}
+.tieude-chinh>hr{
+    margin-top: 0;
+    
+}
+.binhluan{
+    margin: 10px 0;
+    background-color: #FFF;
+}
+.dangnhapfacbook{
+    width: 32px;
+    margin: auto;
+}
+.doimatkhau{
+    width: 30vw;
+    margin: auto;
+}
+
+.book-anh{
+    border: 1px solid #333;
+    width: 120px;
+    float: left;
+    margin: 5px;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+}
+.book-anh> a{
+    color: #FFF;
+}
+.upload{
+    width: 50%;
+    margin: auto;
+    background: #FFF;
+}
+.upload input{
+     margin: 0 auto;
+}
+.book-tep{
+    border: 1px solid black;
+    margin: 15px;
+    background: rgba(0,0,0,0.2);
+}
+.book-tep>col-sm-3 >a {
+    margin-top: 30px;
+}
+.tai-xoa{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid black;
+    background: #FFF;
+}
+.tacgia{
+    position: absolute;
+    right: 10px;
+    float: right;
+    text-align: right;
+}
