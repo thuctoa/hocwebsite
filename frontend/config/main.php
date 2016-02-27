@@ -19,7 +19,7 @@ return [
     'components' => [
         'assetManager' => [
             'class' => 'yii\web\AssetManager',
-            'appendTimestamp' => true,
+            //'appendTimestamp' => true,
             'bundles' => [
                 'yii\web\JqueryAsset' => false,
                 'yii\bootstrap\BootstrapAsset' => [
@@ -31,9 +31,7 @@ return [
                     'js' => [ 
                         'js/bootstrap.min.js',
                     ]
-                ],
-                'yii\widgets\ActiveFormAsset' => false,
-                'yii\validators\ValidationAsset' => false,
+                ]
                ],
         ],
         'user' => [
