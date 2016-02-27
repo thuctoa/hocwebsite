@@ -76,16 +76,16 @@ AppAsset::register($this);
         myWidth = window.innerWidth;
         myHeight = window.innerHeight;
         // your size calculation code here
-//        document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
-//        if(myWidth<1070&&myWidth>=864){
-//            document.getElementById("trangchu").style.cssText = "width: 864px;";
-//        }else if(myWidth<864&&myWidth>=658){
-//            document.getElementById("trangchu").style.cssText = "width: 658px;";
-//        }else if(myWidth<658&&myWidth>=452){
-//            document.getElementById("trangchu").style.cssText = "width: 452px;";
-//        }else if(myWidth<452){
-//            document.getElementById("trangchu").style.cssText = "width: 246px;";
-//        }
+        document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
+        if(myWidth<1024&&myWidth>=864){
+            document.getElementById("trangchu").style.cssText = "width: 864px;";
+        }else if(myWidth<864&&myWidth>=658){
+            document.getElementById("trangchu").style.cssText = "width: 658px;";
+        }else if(myWidth<658&&myWidth>=452){
+            document.getElementById("trangchu").style.cssText = "width: 452px;";
+        }else if(myWidth<452){
+            document.getElementById("trangchu").style.cssText = "width: 246px;";
+        }
     };
     
 </script>
