@@ -19,19 +19,16 @@ return [
     'components' => [
         'assetManager' => [
             'class' => 'yii\web\AssetManager',
-            //'appendTimestamp' => true,
+            'appendTimestamp' => true,
             'bundles' => [
                 'yii\web\JqueryAsset' => false,
+                'yii\web\YiiAsset' => false,
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [
                         'css/bootstrap.min.css',
                     ]
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
-                    'js' => [ 
-                        'js/bootstrap.min.js',
-                    ]
-                ]
+                'yii\bootstrap\BootstrapPluginAsset' => FALSE
                ],
         ],
         'user' => [
