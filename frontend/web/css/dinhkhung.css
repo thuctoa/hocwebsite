@@ -75,6 +75,7 @@
     padding-left: 35px;
 }
 .thoigian{
+    max-width: 176px;
     color: #767676;
     font-size: 11px;
 }
@@ -138,7 +139,7 @@
     font-size: 13px;
     font-weight: bold;
     height: 30px;
-    max-width: 196px;
+    max-width: 176px;
     overflow: hidden;
     display: block;
     display: -webkit-box;
