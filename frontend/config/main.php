@@ -23,17 +23,14 @@ return [
                 'yii\web\JqueryAsset' => [
                     'js' => [
                         'jquery.min.js',
-                        'yii.min.js'
                     ]
                 ],
                 'yii\bootstrap\BootstrapAsset' => [
-                    'css' => [
-                        YII_ENV_DEV ? 'css/bootstrap.min.css' : 'css/bootstrap.min.css',
+                    'css' => ['css/bootstrap.min.css',
                     ]
                 ],
                 'yii\bootstrap\BootstrapPluginAsset' => [
-                    'js' => [
-                        YII_ENV_DEV ? 'js/bootstrap.min.js' : 'js/bootstrap.min.js',
+                    'js' => [ 'js/bootstrap.min.js',
                     ]
                 ],
                 'yii\widgets\ActiveFormAsset' => false,
