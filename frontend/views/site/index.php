@@ -91,11 +91,11 @@ $this->title = Yii::t('app','Học Website');
                 ?>
                 <a href="<?=$model->getlinkurl()?>" title="<?=$model['title']?>">
                         <div class="row tin">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 nenanhminhhoa">
                                 <img title="<?=$model['title']?>" src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
                             </div>
                             <div class="col-sm-8 tin-phai">
-                                <p class="tieude-tin"><?=$model['title']?></p>
+                                <p class="tieude-tin tieude-tin-trangchu"><?=$model['title']?></p>
                                 <p class="thoigian">
                                     <?= Urlseo::thoigian($model['time_new'])?>
                                 </p>
