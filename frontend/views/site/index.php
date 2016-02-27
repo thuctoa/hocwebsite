@@ -95,7 +95,7 @@ $this->title = Yii::t('app','Học Website');
                                 <img title="<?=$model['title']?>" src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
                             </div>
                             <div class="col-sm-8 tin-phai">
-                                <p class="tieude-tin tieude-tin-trangchu"><?=$model['title']?></p>
+                                <p class=" tieude-tin-trangchu"><?=$model['title']?></p>
                                 <p class="thoigian">
                                     <?= Urlseo::thoigian($model['time_new'])?>
                                 </p>
