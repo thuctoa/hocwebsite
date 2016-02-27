@@ -78,16 +78,16 @@ AppAsset::register($this);
         // your size calculation code here
         console.log(myWidth);
         document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
-        if(myWidth>=1040){
-            document.getElementById("trangchu").style.cssText = "width: 1040px;";
-        }else if(myWidth<1040&&myWidth>=834){
-            document.getElementById("trangchu").style.cssText = "width: 834px;";
-        }else if(myWidth<834&&myWidth>=628){
-            document.getElementById("trangchu").style.cssText = "width: 628px;";
-        }else if(myWidth<628&&myWidth>=422){
-            document.getElementById("trangchu").style.cssText = "width: 422px;";
-        }else if(myWidth<422){
-            document.getElementById("trangchu").style.cssText = "width: 216px;";
+        if(myWidth>=1070){
+            document.getElementById("trangchu").style.cssText = "width: 1070px;";
+        }else if(myWidth<1070&&myWidth>=864){
+            document.getElementById("trangchu").style.cssText = "width: 864px;";
+        }else if(myWidth<864&&myWidth>=658){
+            document.getElementById("trangchu").style.cssText = "width: 658px;";
+        }else if(myWidth<658&&myWidth>=452){
+            document.getElementById("trangchu").style.cssText = "width: 452px;";
+        }else if(myWidth<452){
+            document.getElementById("trangchu").style.cssText = "width: 246px;";
         }
     };
     
@@ -209,7 +209,7 @@ AppAsset::register($this);
             <a href='https://plus.google.com/117365335820918436212?rel=author' rel='author'>
                 Nguyễn Thế Thức
             </a>  
-            </span>>
+            </span>
         </div>
     </footer>
 
