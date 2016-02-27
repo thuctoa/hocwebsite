@@ -40,7 +40,7 @@ return [
         'view' => [
             'class' => '\rmrevin\yii\minify\View',
             'enableMinify' => !YII_DEBUG,
-            'web_path' => '@/home/hocwebsite', // path alias to web base
+            'web_path' => '@/home/hocwebsite/frontend/web', // path alias to web base
             'base_path' => '@/home/hocwebsite/frontend/web', // path alias to web base
             'minify_path' => '@webroot/minify', // path alias to save minify result
             'js_position' => [ \yii\web\View::POS_END ], // positions of js files to be minified
