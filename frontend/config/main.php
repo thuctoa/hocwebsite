@@ -21,7 +21,10 @@ return [
             'class' => 'yii\web\AssetManager',
             'bundles' => [
                 'yii\web\JqueryAsset' => [
-                    'js' => ['all.min.js'],
+                    'js' => [
+                        'jquery.min.js',
+                        'yii.min.js'
+                    ]
                 ],
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [
@@ -35,7 +38,7 @@ return [
                 ],
                 'yii\widgets\ActiveFormAsset' => false,
                 'yii\validators\ValidationAsset' => false,
-            ],
+               ],
         ],
         
         'user' => [
