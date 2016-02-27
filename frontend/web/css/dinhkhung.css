@@ -137,7 +137,10 @@
    font-size: 13px;
    font-weight: bold;
    height: 25px;
-   text-overflow: clip;
+   text-overflow: ellipsis;
+   width: 196px;
+   overflow: hidden;
+   white-space: nowrap;
 }
 
 #timkiem>input{
