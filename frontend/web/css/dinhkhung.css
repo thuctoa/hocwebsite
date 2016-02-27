@@ -151,8 +151,9 @@
     
 }
 .nenanhminhhoa>img{
-    border: outset;
+    border: inset;
     padding: 2px;
+    border-color: #F44;
 }
 #timkiem>input{
     height: 30px;
