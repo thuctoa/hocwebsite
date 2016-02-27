@@ -162,7 +162,7 @@ class SiteController extends Controller
                 $query->where('isbn=1');
         }
         $countQuery = clone $query;
-        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize'=>10]);
+        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize'=>15]);
         $models = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
