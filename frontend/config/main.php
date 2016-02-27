@@ -21,12 +21,7 @@ return [
             'class' => 'yii\web\AssetManager',
             'appendTimestamp' => true,
             'bundles' => [
-                'yii\web\JqueryAsset' => [
-                    'sourcePath' => null,   // do not publish the bundle
-                    'js' => [
-                        'jquery.min.js',
-                    ]
-                ],
+                'yii\web\JqueryAsset' => false,
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [
                         'css/bootstrap.min.css',
