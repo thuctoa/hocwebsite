@@ -135,7 +135,7 @@ class SiteController extends Controller
     {
         $searchModel = new BookSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $dataProvider->pagination->pageSize=10;
+        $dataProvider->pagination->pageSize=15;
         
         $baiviet=[];
         
