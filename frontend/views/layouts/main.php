@@ -76,7 +76,6 @@ AppAsset::register($this);
         myWidth = window.innerWidth;
         myHeight = window.innerHeight;
         // your size calculation code here
-        console.log(myWidth);
         document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
         if(myWidth>=1070){
             document.getElementById("trangchu").style.cssText = "width: 1070px;";
