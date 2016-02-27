@@ -148,7 +148,9 @@
     line-height: 1.325;
     text-overflow: ellipsis;
 }
-
+.nenanhminhhoa>img{
+    border: 1px solid #eee;
+}
 #timkiem>input{
     height: 30px;
     border-radius: 0;
