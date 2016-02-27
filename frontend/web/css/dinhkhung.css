@@ -82,7 +82,6 @@
     width: 130px;
     height: 70px;
     margin-left: -15px;
-     
 }
 
 .bantin{
@@ -107,10 +106,9 @@
     width: 100%;
 }
 #trangchu{
-    width: 93%;
+    width: 81%;
     background-color: #fff;
     margin: 0 auto;
-    padding: 15px;
 }
 #content{
     width: 100%;
@@ -138,6 +136,7 @@
    color: #167ac6;
    font-size: 13px;
    font-weight: bold;
+   height: 25px;
 }
 
 #timkiem>input{
@@ -154,10 +153,11 @@
     box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
 }
 .table-trangchu>tbody>tr{
-    width: 160px;
+    width: 196px;
     float: left;
-    margin:1.2%;
-    height: 200px;
+    margin-left:10px;
+    height: 250px;
+    line-height: 1.3em;
 }
 
 .noidung-chinh{

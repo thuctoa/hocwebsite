@@ -168,7 +168,7 @@ $this->title = Yii::t('app','Học Website');
                             return 
                                     Html::a('<p class="nenanhminhhoa">'.
                                             Html::img($data->imageurl
-                                                    ,['width'=>160,'height'=>110,'alt'=>$data->title, 'title'=>$data->title]).'</p>',
+                                                    ,['width'=>196,'height'=>110,'alt'=>$data->title, 'title'=>$data->title]).'</p>',
                                     $url, ['title' => $data->title] ).
                                     Html::a(
                                     '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.

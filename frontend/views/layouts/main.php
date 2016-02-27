@@ -72,12 +72,23 @@ AppAsset::register($this);
     window.onload = displayWindowSize;
 
     function displayWindowSize() {
+        
         myWidth = window.innerWidth;
         myHeight = window.innerHeight;
         // your size calculation code here
-
+        console.log(myWidth);
         document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
-
+        if(myWidth>=1040){
+            document.getElementById("trangchu").style.cssText = "width: 1040px;";
+        }else if(myWidth<1040&&myWidth>=834){
+            document.getElementById("trangchu").style.cssText = "width: 834px;";
+        }else if(myWidth<834&&myWidth>=628){
+            document.getElementById("trangchu").style.cssText = "width: 628px;";
+        }else if(myWidth<628&&myWidth>=422){
+            document.getElementById("trangchu").style.cssText = "width: 422px;";
+        }else if(myWidth<422){
+            document.getElementById("trangchu").style.cssText = "width: 216px;";
+        }
     };
     
 </script>
