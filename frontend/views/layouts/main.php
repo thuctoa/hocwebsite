@@ -222,13 +222,15 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
             <span >
-                &copy; <?= \Yii::$app->name.' '.date('Y') ?>
+                <h3 class="hocwebsite"> &copy; <?= \Yii::$app->name.' '.date('Y') ?> </h3>
             </span>
             <span class="tacgia">
+                <h3 class="hocwebsite">
                 Phát triển bởi: 
             <a href='https://plus.google.com/117365335820918436212?rel=author' rel='author'>
                 Nguyễn Thế Thức
             </a>  
+                </h3>
             </span>
         </div>
     </footer>
