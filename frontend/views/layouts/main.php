@@ -17,9 +17,9 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="msvalidate.01" content="B693FEE86D66E8587C4E1AA37056D47E" />
-    <meta name="description" content="Hướng dẫn lập trình học website mã nguồn mở PHP">
+    <meta name="description" content="Hướng dẫn lập trình học website mã nguồn mở PHP cho người mới bắt đầu.">
     <meta name="keywords" content="Học website, học lập trình php, thiết kế website, 
-          khóa học lập trình php miễn phí">
+          khóa học lập trình php miễn phí, Học lập trình website cho người mới bắt đầu học">
     <meta name="author" content="Nguyễn Thế Thức">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="fb:app_id" content="213920512290093" />
