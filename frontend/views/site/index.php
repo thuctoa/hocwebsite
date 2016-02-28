@@ -160,7 +160,7 @@ $this->title = Yii::t('app','Học Website');
                 <div class="row nentrang tieuchi">
                     <div class="col-sm-2">
                         <img src="/favicon.ico" alt="<?=$this->title?>"/>
-                        <h1 class="theh1"> <span class="text-hoc">Học</span> <span class="text-web">Web</span><span class="text-site">site</span></h1>
+                        <h1 class="theh1"> <?=\Yii::$app->name?></h1>
                     </div>
                     <div class="col-sm-10">
       

@@ -351,6 +351,7 @@
     width: 300px;
     margin-top: 5px;
     float: left;
+    color: #337ab7;
 }
 .tieuchi{
     margin-left: 45px;
@@ -361,7 +362,7 @@
    font-weight: 500;
    font-size: 15px;
    margin-top: 0px;
-   color: #000;
+   color: #0a0;
 }
 .theh2{
     color: #767676;
@@ -379,7 +380,7 @@
     margin: 0px;
     margin-top: 6px;
     margin-left: 8px;
-    color: #000;
+    color: #0a0;
 }
 .tieuchi{
     font-weight: 500;
@@ -398,6 +399,7 @@
 .microformats>ul>li{
     float: left;
     padding-right: 10px;
+    color: #337ab7;
 }
 .text-hoc{
     color: blue;
@@ -407,5 +409,5 @@
     color: #0a0;
 }
 .text-site{
-    color: #FFA54E;
+    color: #ff9900;
 }
