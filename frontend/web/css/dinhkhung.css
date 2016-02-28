@@ -345,6 +345,7 @@
     right: 10px;
     float: right;
     text-align: right;
+    margin-top: -20px;
 }
 .hocwebsite{
     font-size: 14px;
@@ -388,4 +389,7 @@
 }
 #trangchu{
     padding-top: 0;
+}
+.microformats{
+    float: left;
 }

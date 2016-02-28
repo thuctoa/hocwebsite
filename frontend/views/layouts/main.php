@@ -216,6 +216,7 @@ AppAsset::register($this);
                 <?php endforeach; ?>
             </div>
             <?= $content ?>
+            
         </div>
         
     </div>
@@ -224,6 +225,11 @@ AppAsset::register($this);
             <span >
                 <h3 class="hocwebsite"> &copy; <?= \Yii::$app->name.' '.date('Y') ?> </h3>
             </span>
+            <div class="microformats" itemscope itemtype="http://schema.org/Event">
+                <span itemprop="name">Foo Fighters Concert</span>.
+                Concert will take place at <span itemprop="location">Madison Square Garden</span>
+                on <time datetime="2011-05-08T19:30">May 8, 2011 at 7:30pm</time>.
+            <div>
             <span class="tacgia">
                 <h3 class="hocwebsite">
                 Phát triển bởi: 
