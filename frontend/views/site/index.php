@@ -64,9 +64,9 @@ $this->title = Yii::t('app','Học Website');
                         <img title="<?=$baiviet['title']?>" src="../uploads/<?=$baiviet['img']?>" alt="<?=$baiviet['title']?>" class="anhminhhoa">
                     </div>
                     <div class="col-sm-8 tin-phai">
-                        <h3 class="tieude-tin">
+                        <p class="tieude-tin">
                         <?=$baiviet['title']?>
-                        </h3>
+                        </p>
                         <p class="thoigian">
                             <?= Urlseo::thoigian($baiviet['time_new'])?>
                         </p>
@@ -95,7 +95,7 @@ $this->title = Yii::t('app','Học Website');
                                 <img title="<?=$model['title']?>" src="../uploads/<?=$model['img']?>" alt="<?=$model['title']?>" class="anhminhhoa">
                             </div>
                             <div class="col-sm-8 tin-phai">
-                                <h3 class=" tieude-tin-trangchu"><?=$model['title']?></h3>
+                                <p class=" tieude-tin-trangchu"><?=$model['title']?></p>
                                 <p class="thoigian">
                                     <?= Urlseo::thoigian($model['time_new'])?>
                                 </p>
@@ -171,7 +171,7 @@ $this->title = Yii::t('app','Học Website');
                                                     ,['width'=>196,'height'=>110,'alt'=>$data->title, 'title'=>$data->title]).'</p>',
                                     $url, ['title' => $data->title] ).
                                     Html::a(
-                                    '<h3 class="tieude-tin-trangchu">'.$data->title.'</h3>'.
+                                    '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
                                     '<p class="thoigian">'.
                                     Urlseo::thoigian($data->time_new)
                                     .
