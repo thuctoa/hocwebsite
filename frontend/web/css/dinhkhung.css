@@ -361,10 +361,12 @@
    font-weight: 500;
    font-size: 15px;
    margin-top: 0px;
+   color: #000;
 }
 .theh2{
+        color: #767676;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -373,9 +375,11 @@
 }
 .theh1{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0px;
     margin-top: 10px;
+    margin-left: 6px;
+    color: #000;
 }
 .tieuchi{
     font-weight: 500;
