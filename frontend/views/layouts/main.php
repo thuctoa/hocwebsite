@@ -68,6 +68,18 @@ AppAsset::register($this);
        }(document, 'script', 'facebook-jssdk'));
 
     var chieurongbandau = 700;
+    var cachtrai=15;
+    var ronganh=196;
+    var cachhaiben=30;
+    var dorong = ronganh + cachtrai;
+    var dothem= cachhaiben*2 - cachtrai;
+    var rongtrangchu=[];
+    rongtrangchu[0]= dorong*5 + dothem;
+    rongtrangchu[1]= dorong*4 + dothem;
+    rongtrangchu[2]= dorong*3 + dothem;
+    rongtrangchu[3]= dorong*2 + dothem;
+    rongtrangchu[4]= dorong + dothem;
+    
     window.onresize = displayWindowSize;
     window.onload = displayWindowSize;
 
@@ -75,16 +87,24 @@ AppAsset::register($this);
         
         myWidth = window.innerWidth;
         myHeight = window.innerHeight;
+        
         // your size calculation code here
         document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
-        if(myWidth<1024&&myWidth>=864){
-            document.getElementById("trangchu").style.cssText = "width: 864px;";
-        }else if(myWidth<864&&myWidth>=658){
-            document.getElementById("trangchu").style.cssText = "width: 658px;";
-        }else if(myWidth<658&&myWidth>=452){
-            document.getElementById("trangchu").style.cssText = "width: 452px;";
-        }else if(myWidth<452){
-            document.getElementById("trangchu").style.cssText = "width: 246px;";
+        if(myWidth >=1024){
+            document.getElementById("trangchu").style.cssText = 
+                    "width: "+rongtrangchu[0]+"px;";
+        }else if(myWidth<1024&&myWidth>=rongtrangchu[1]){
+            document.getElementById("trangchu").style.cssText = 
+                    "width: "+rongtrangchu[1]+"px;";
+        }else if(myWidth<rongtrangchu[1]&&myWidth>=rongtrangchu[2]){
+            document.getElementById("trangchu").style.cssText = 
+                    "width: "+rongtrangchu[2]+"px;";
+        }else if(myWidth<rongtrangchu[2]&&myWidth>=rongtrangchu[3]){
+            document.getElementById("trangchu").style.cssText = 
+                    "width: "+rongtrangchu[3]+"px;";
+        }else if(myWidth<rongtrangchu[3]){
+            document.getElementById("trangchu").style.cssText = 
+                    "width: "+rongtrangchu[4]+"px;";
         }
     };
     

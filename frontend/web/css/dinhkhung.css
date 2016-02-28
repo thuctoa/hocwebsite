@@ -109,7 +109,7 @@
     width: 100%;
 }
 #trangchu{
-    width: 1070px;
+    width: 1100px;
     background-color: #fff;
     margin: 0 auto;
     padding: 15px;
@@ -140,7 +140,6 @@
     color: #167ac6;
     font-size: 13px;
     font-weight: bold;
-    //height: 30px;
     max-width: 176px;
     overflow: hidden;
     display: -webkit-box;
@@ -148,10 +147,9 @@
     -webkit-box-orient: vertical;
     line-height: 1.325;
     text-overflow: ellipsis;
-    
 }
-.nenanhminhhoa>img{
-    border:1px solid green;
+.nenanhminhhoa{
+    margin-bottom: 5px;
 }
 #timkiem>input{
     height: 30px;
@@ -169,7 +167,7 @@
 .table-trangchu>tbody>tr{
     width: 196px;
     float: left;
-    margin-left:10px;
+    margin-left: 15px;
     height: 200px;
     line-height: 1.3em;
 }

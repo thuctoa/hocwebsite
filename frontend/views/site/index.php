@@ -180,7 +180,7 @@ $this->title = Yii::t('app','Học Website');
                                     );
                             },
                         'format' => 'raw',
-                        'contentOptions'=>['style'=>'width: 160px;'], 
+                        'contentOptions'=>['style'=>'width: 196px;'], 
                     ],
                 ],
             ]); ?>
