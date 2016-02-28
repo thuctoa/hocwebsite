@@ -158,22 +158,22 @@ $this->title = Yii::t('app','Học Website');
             
             <div class="trangchu" id="trangchu"> 
                 <div class="row nentrang tieuchi">
-                    <div class="col-sm-2 tieudehocwebsite">
+                    <div class="col-sm-2">
                         <img src="/favicon.ico"/>
                         <h1 class="theh1"> Học Website</h1>
                     </div>
                     <div class="col-sm-10">
       
                         <h2 class="theh2"> 
-                            Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí.
+                            Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí
                         </h2>
                    
                         <h2 class="theh2"> 
-                            Người học sẽ có được các kiến thức cơ bản cho người mới bắt đầu học lập trình website.
+                            Người học sẽ có được các kiến thức cơ bản về lập trình Website về SEO và bảo mật
                         </h2>
                     
                         <h2 class="theh2"> 
-                            Từ cài đặt các phần mềm hỗ trợ lập trình đến FRAMEWORK và thực hành triển khai mộ hệ thống trên thực tế.
+                            Từ cài đặt phần mềm lập trình đến học Framework và thực hành triển khai một hệ thống trên thực tế
                         </h2>
                     
                     </div>
