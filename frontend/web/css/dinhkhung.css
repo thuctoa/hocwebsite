@@ -151,13 +151,7 @@
     
 }
 .nenanhminhhoa>img{
-    border: inset;
-    padding: 2px;
-    border-color: #F44;
-}
-.nenanhminhhoa>img:hover{
-    border: outset;
-    border-color: #F52;
+    border:1px solid green;
 }
 #timkiem>input{
     height: 30px;
