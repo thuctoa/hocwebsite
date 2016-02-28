@@ -399,3 +399,13 @@
     float: left;
     padding-right: 10px;
 }
+.text-hoc{
+    color: blue;
+    font-weight:  600;
+}
+.text-web{
+    color: #0a0;
+}
+.text-site{
+    color: #FFA54E;
+}
