@@ -351,7 +351,7 @@
     width: 300px;
     margin-top: 5px;
     float: left;
-    color: #337ab7;
+    color: #0a0;
 }
 .tieuchi{
     margin-left: 45px;
@@ -400,7 +400,7 @@
 .microformats>ul>li{
     float: left;
     padding-right: 10px;
-    color: #337ab7;
+    color: #0a0;
 }
 .text-hoc{
     color: blue;
