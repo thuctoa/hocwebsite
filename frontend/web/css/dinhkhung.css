@@ -345,7 +345,6 @@
     right: 10px;
     float: right;
     text-align: right;
-    margin-top: -20px;
 }
 .hocwebsite{
     font-size: 14px;
@@ -392,4 +391,11 @@
 }
 .microformats{
     float: left;
+}
+.microformats>ul{
+    list-style-type: none;
+}
+.microformats>ul>li{
+    float: left;
+    padding-right: 10px;
 }
