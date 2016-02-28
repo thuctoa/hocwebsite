@@ -225,11 +225,15 @@ AppAsset::register($this);
             <span >
                 <h3 class="hocwebsite"> &copy; <?= \Yii::$app->name.' '.date('Y') ?> </h3>
             </span>
-            <div class="microformats" itemscope itemtype="http://schema.org/Event">
-                <span itemprop="name">Foo Fighters Concert</span>.
-                Concert will take place at <span itemprop="location">Madison Square Garden</span>
-                on <time datetime="2011-05-08T19:30">May 8, 2011 at 7:30pm</time>.
-            <div>
+            <div class="microformats">
+                <ul class="vcard">
+                    <li class="fn">Joe Doe</li>
+                    <li class="org">The Example Company</li>
+                    <li class="tel">604-555-1234</li>
+                    <li><a class="url" href="http://hocwebsite.org/">http://hocwebsite.org/</a></li>
+              </ul>
+            </div>
+            
             <span class="tacgia">
                 <h3 class="hocwebsite">
                 Phát triển bởi: 
