@@ -147,6 +147,7 @@
     -webkit-box-orient: vertical;
     line-height: 1.325;
     text-overflow: ellipsis;
+    margin-top: 0px;
 }
 .nenanhminhhoa{
     margin-bottom: 5px;

@@ -90,21 +90,23 @@ AppAsset::register($this);
         
         // your size calculation code here
         document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
-        if(myWidth >=1024){
-            document.getElementById("trangchu").style.cssText = 
-                    "width: "+rongtrangchu[0]+"px;";
-        }else if(myWidth<1024&&myWidth>=rongtrangchu[1]){
-            document.getElementById("trangchu").style.cssText = 
-                    "width: "+rongtrangchu[1]+"px;";
-        }else if(myWidth<rongtrangchu[1]&&myWidth>=rongtrangchu[2]){
-            document.getElementById("trangchu").style.cssText = 
-                    "width: "+rongtrangchu[2]+"px;";
-        }else if(myWidth<rongtrangchu[2]&&myWidth>=rongtrangchu[3]){
-            document.getElementById("trangchu").style.cssText = 
-                    "width: "+rongtrangchu[3]+"px;";
-        }else if(myWidth<rongtrangchu[3]){
-            document.getElementById("trangchu").style.cssText = 
-                    "width: "+rongtrangchu[4]+"px;";
+        if(document.getElementById("trangchu")){
+            if(myWidth >=1024){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[0]+"px;";
+            }else if(myWidth<1024&&myWidth>=rongtrangchu[1]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[1]+"px;";
+            }else if(myWidth<rongtrangchu[1]&&myWidth>=rongtrangchu[2]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[2]+"px;";
+            }else if(myWidth<rongtrangchu[2]&&myWidth>=rongtrangchu[3]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[3]+"px;";
+            }else if(myWidth<rongtrangchu[3]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[4]+"px;";
+            }
         }
     };
     
