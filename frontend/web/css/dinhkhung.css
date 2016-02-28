@@ -110,9 +110,13 @@
 }
 #trangchu{
     width: 1100px;
-    background-color: #fff;
+    
     margin: 0 auto;
     padding: 15px;
+}
+.nentrang{
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 #content{
     width: 100%;
@@ -348,4 +352,28 @@
     margin-top: 5px;
     float: left;
 }
-
+.danhsachbaigiang{
+   padding: 15px;
+   font-weight: 500;
+   font-size: 15px;
+   margin-top: 0px;
+}
+.theh2{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: url(/uploads/checkbox.png) no-repeat;
+    padding-left: 50px;
+}
+.theh1{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px;
+}
+.tieuchi{
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}

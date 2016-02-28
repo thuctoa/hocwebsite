@@ -155,35 +155,60 @@ $this->title = Yii::t('app','Học Website');
     <?php 
     }else {
     ?>
+            
             <div class="trangchu" id="trangchu"> 
-               <?= GridView::widget([
-                'dataProvider' => $dataProvider,
-                'filterModel' => $searchModel,
-                'layout'=>"{items}\n{pager}",
-                'tableOptions' =>['class' => 'table table-trangchu'],
-                'columns' => [
-                    [
-                        'value' => function($data) {
-                            $url = $data->linkurl;
-                            return 
-                                    Html::a('<p class="nenanhminhhoa">'.
-                                            Html::img($data->imageurl
-                                                    ,['width'=>196,'height'=>110,'alt'=>$data->title, 'title'=>$data->title]).'</p>',
-                                    $url, ['title' => $data->title] ).
-                                    Html::a(
-                                    '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
-                                    '<p class="thoigian">'.
-                                    Urlseo::thoigian($data->time_new)
-                                    .
-                                    '</p>',
-                                    $url, ['title' => $data->title]
-                                    );
-                            },
-                        'format' => 'raw',
-                        'contentOptions'=>['style'=>'width: 196px;'], 
-                    ],
-                ],
-            ]); ?>
+                <div class="row nentrang tieuchi">
+                    <div class="col-sm-2 tieudehocwebsite">
+                        <img src="/favicon.ico"/>
+                        <h1 class="theh1"> Học Website</h1>
+                    </div>
+                    <div class="col-sm-10">
+      
+                        <h2 class="theh2"> 
+                            Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí.
+                        </h2>
+                   
+                        <h2 class="theh2"> 
+                            Người học sẽ có được các kiến thức cơ bản cho người mới bắt đầu học lập trình website.
+                        </h2>
+                    
+                        <h2 class="theh2"> 
+                            Từ cài đặt các phần mềm hỗ trợ lập trình đến FRAMEWORK và thực hành triển khai mộ hệ thống trên thực tế.
+                        </h2>
+                    
+                    </div>
+                </div>
+                <div class="nentrang">
+                    <h3 class="danhsachbaigiang" >Danh sách các bài giảng </h3>
+                    <?= GridView::widget([
+                        'dataProvider' => $dataProvider,
+                        'filterModel' => $searchModel,
+                        'layout'=>"{items}\n{pager}",
+                        'tableOptions' =>['class' => 'table table-trangchu'],
+                        'columns' => [
+                        [
+                            'value' => function($data) {
+                                $url = $data->linkurl;
+                                return 
+                                        Html::a('<p class="nenanhminhhoa">'.
+                                                Html::img($data->imageurl
+                                                        ,['width'=>196,'height'=>110,'alt'=>$data->title, 'title'=>$data->title]).'</p>',
+                                        $url, ['title' => $data->title] ).
+                                        Html::a(
+                                        '<p class="tieude-tin-trangchu">'.$data->title.'</p>'.
+                                        '<p class="thoigian">'.
+                                        Urlseo::thoigian($data->time_new)
+                                        .
+                                        '</p>',
+                                        $url, ['title' => $data->title]
+                                        );
+                                },
+                            'format' => 'raw',
+                            'contentOptions'=>['style'=>'width: 196px;'], 
+                         ],
+                     ],
+                    ]); ?>
+                </div>
             </div>
     <?php
         }?>
