@@ -77,11 +77,16 @@ AppAsset::register($this);
     var dorong = ronganh + cachtrai;
     var dothem= cachhaiben*2 - cachtrai;
     var rongtrangchu=[];
-    rongtrangchu[0]= dorong*5 + dothem;
-    rongtrangchu[1]= dorong*4 + dothem;
-    rongtrangchu[2]= dorong*3 + dothem;
-    rongtrangchu[3]= dorong*2 + dothem;
-    rongtrangchu[4]= dorong + dothem;
+    rongtrangchu[1]= dorong + dothem;
+    rongtrangchu[2]= dorong*2 + dothem;
+    rongtrangchu[3]= dorong*3 + dothem;
+    rongtrangchu[4]= dorong*4 + dothem;
+    rongtrangchu[5]= dorong*5 + dothem;
+    rongtrangchu[6]= dorong*6 + dothem;
+    rongtrangchu[7]= dorong*7 + dothem;
+    rongtrangchu[8]= dorong*8 + dothem;
+    rongtrangchu[9]= dorong*9 + dothem;
+    rongtrangchu[10]= dorong*10 + dothem;
     
     window.onresize = displayWindowSize;
     window.onload = displayWindowSize;
@@ -94,21 +99,38 @@ AppAsset::register($this);
         // your size calculation code here
         document.getElementById("timkiem").style.cssText = "width: "+(myWidth-chieurongbandau)+'px;';
         if(document.getElementById("trangchu")){
-            if(myWidth >=1024){
+            
+            if(myWidth>=rongtrangchu[10]){
                 document.getElementById("trangchu").style.cssText = 
-                        "width: "+rongtrangchu[0]+"px;";
-            }else if(myWidth<1024&&myWidth>=rongtrangchu[1]){
+                        "width: "+rongtrangchu[10]+"px;";
+            }else if(myWidth>=rongtrangchu[9]){
                 document.getElementById("trangchu").style.cssText = 
-                        "width: "+rongtrangchu[1]+"px;";
-            }else if(myWidth<rongtrangchu[1]&&myWidth>=rongtrangchu[2]){
+                        "width: "+rongtrangchu[9]+"px;";
+            }else if(myWidth>=rongtrangchu[8]){
                 document.getElementById("trangchu").style.cssText = 
-                        "width: "+rongtrangchu[2]+"px;";
-            }else if(myWidth<rongtrangchu[2]&&myWidth>=rongtrangchu[3]){
+                        "width: "+rongtrangchu[8]+"px;";
+            }else if(myWidth>=rongtrangchu[7]){
                 document.getElementById("trangchu").style.cssText = 
-                        "width: "+rongtrangchu[3]+"px;";
-            }else if(myWidth<rongtrangchu[3]){
+                        "width: "+rongtrangchu[7]+"px;";
+            }else if(myWidth>=rongtrangchu[6]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[6]+"px;";
+            }
+            else if(myWidth >=1024){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[5]+"px;";
+            }else if(myWidth>=rongtrangchu[4]){
                 document.getElementById("trangchu").style.cssText = 
                         "width: "+rongtrangchu[4]+"px;";
+            }else if(myWidth>=rongtrangchu[3]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[3]+"px;";
+            }else if(myWidth>=rongtrangchu[2]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[2]+"px;";
+            }else if(myWidth<rongtrangchu[2]){
+                document.getElementById("trangchu").style.cssText = 
+                        "width: "+rongtrangchu[2]+"px;";
             }
         }
     };
