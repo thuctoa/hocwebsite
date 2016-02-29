@@ -130,7 +130,7 @@ AppAsset::register($this);
                         "width: "+rongtrangchu[2]+"px;";
             }else if(myWidth<rongtrangchu[2]){
                 document.getElementById("trangchu").style.cssText = 
-                        "width: "+rongtrangchu[2]+"px;";
+                        "width: "+rongtrangchu[1]+"px;";
             }
         }
     };
