@@ -1,9 +1,8 @@
 <?php
 
 namespace app\models;
-
+use common\seo\Urlseo;
 use Yii;
-
 /**
  * This is the model class for table "user".
  *
@@ -76,5 +75,35 @@ class User extends \yii\db\ActiveRecord
     public function getBooks()
     {
         return $this->hasMany(Book::className(), ['user_id' => 'id']);
+    }
+    public function getBaitap(){
+        Yii::setAlias('@anyname', realpath(dirname(__FILE__).'/../../'));
+        $dir = Yii::getAlias('@anyname').'/frontend/web/uploads/'.$this->id;
+        if(file_exists($dir)){
+            $files=\yii\helpers\FileHelper::findFiles($dir);
+            if(!empty($files)){
+                arsort($files);
+                $mang=[];
+                $mang1=[];
+                foreach ($files as $key=>$val){
+                   $val1=explode("/",$val);
+                   if(isset($val1[8])){
+                       $mang[]= $val1[8];
+                       $val2=explode("^",$val1[8]);
+                       $mang1[]=$val2[0];
+                   }
+                }
+                $bt='';
+                foreach ($mang as $key=>$val){
+                    $bt=$bt.'<a href=/uploads/'.$this->id.'/'.$val.'>'.Urlseo::thoigian($mang1[$key]).'</a><hr>';
+                }
+                return $bt;
+            }else{
+                return 'Không có bài nào';
+            }
+        }else{
+            return 'Chưa nộp bài lần nào';
+        }
+        
     }
 }
