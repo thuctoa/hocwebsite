@@ -16,6 +16,7 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="google-site-verification" content="sw1f1qIH5NbeJeIBhO7KfjoVtl0eUEExLmHUYGFakhE" />
     <meta name="p:domain_verify" content="949a682ec68ca427fee6248382a00e08"/>
     <meta name="msvalidate.01" content="B693FEE86D66E8587C4E1AA37056D47E" />
     <meta name="description" content="Hướng dẫn lập trình học website mã nguồn mở PHP cho người mới bắt đầu.">
