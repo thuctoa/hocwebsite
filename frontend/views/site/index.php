@@ -176,29 +176,8 @@ $this->title = Yii::t('app','Học Website');
     ?>
             
             <div class="trangchu" id="trangchu"> 
-                <div class="row nentrang tieuchi">
-                    <div class="col-sm-2">
-                        <img src="/favicon.ico" width="100" height="96" alt="<?=$this->title?>"/>
-                        <h1 class="theh1"> <?=\Yii::$app->name?></h1>
-                    </div>
-                    <div class="col-sm-10">
-      
-                        <h2 class="theh2"> 
-                            Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí
-                        </h2>
-                   
-                        <h2 class="theh2"> 
-                            Người học sẽ có được các kiến thức cơ bản về lập trình Website về SEO và bảo mật
-                        </h2>
-                    
-                        <h2 class="theh2"> 
-                            Từ cài đặt phần mềm lập trình đến học Framework và thực hành triển khai một hệ thống trên thực tế
-                        </h2>
-                    
-                    </div>
-                </div>
+                
                 <div class="nentrang">
-                    <h3 class="danhsachbaigiang" >Danh sách các bài giảng </h3>
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
@@ -227,6 +206,28 @@ $this->title = Yii::t('app','Học Website');
                          ],
                      ],
                     ]); ?>
+                </div>
+                <div class="row nentrang tieuchi">
+                    <h3 class="danhsachbaigiang" >Tiêu chí của chúng tôi </h3>
+                    <div class="col-sm-2">
+                        <img src="/favicon.ico" width="100" height="96" alt="<?=$this->title?>"/>
+                        <h1 class="theh1"> <?=\Yii::$app->name?></h1>
+                    </div>
+                    <div class="col-sm-10">
+      
+                        <h2 class="theh2"> 
+                            Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí
+                        </h2>
+                   
+                        <h2 class="theh2"> 
+                            Người học sẽ có được các kiến thức cơ bản về lập trình Website về SEO và bảo mật
+                        </h2>
+                    
+                        <h2 class="theh2"> 
+                            Từ cài đặt phần mềm lập trình đến học Framework và thực hành triển khai một hệ thống trên thực tế
+                        </h2>
+                    
+                    </div>
                 </div>
             </div>
     <?php

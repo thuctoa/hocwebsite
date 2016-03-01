@@ -353,10 +353,6 @@
     float: left;
     color: #0a0;
 }
-.tieuchi{
-    margin-left: 45px;
-    margin-right: 45px;
-}
 .danhsachbaigiang{
    padding: 15px;
    font-weight: 500;
@@ -387,6 +383,7 @@
     font-weight: 500;
     padding-bottom: 15px;
     padding-top: 10px;
+    margin-top: -10px;
 }
 #trangchu{
     padding-top: 0;
