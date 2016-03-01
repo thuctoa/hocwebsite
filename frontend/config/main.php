@@ -23,7 +23,7 @@ return [
             'bundles' => [
                 'yii\web\JqueryAsset' => [
                     'js' => [
-                        'jquery.min.js',
+                        'jquery.min.js'
                     ]
                 ],
                 'yii\bootstrap\BootstrapAsset' => [
