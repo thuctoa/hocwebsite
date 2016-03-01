@@ -49,7 +49,7 @@ AppAsset::register($this);
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\
     ga('create', 'UA-73984606-1', 'auto');
-    ga('send', 'pageview');\
+    ga('send', 'pageview');
     var chieurongbandau = 700;
     var cachtrai=15;
     var ronganh=196;
