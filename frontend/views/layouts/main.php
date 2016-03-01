@@ -142,7 +142,7 @@ AppAsset::register($this);
         
         <?php
             NavBar::begin([
-                'brandLabel' => Html::img('/img/logo-nav.png',['alt'=>'Học Website']),
+                'brandLabel' => Html::img('/img/logo-nav.png',['alt'=>'Học Website','width'=>147,'height'=>46]),
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-default navbar-fixed-top menu ',
