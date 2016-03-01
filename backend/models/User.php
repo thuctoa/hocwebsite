@@ -83,9 +83,7 @@ class User extends \yii\db\ActiveRecord
         if(file_exists($dir)){
             $files=\yii\helpers\FileHelper::findFiles($dir);
             if(!empty($files)){
-                echo '<pre>';
-                    print_r($files);
-                echo '</pre>';
+                
                 arsort($files);
                 $mang=[];
                 $mang1=[];
@@ -97,6 +95,9 @@ class User extends \yii\db\ActiveRecord
                        $mang1[]=$val2[0];
                    }
                 }
+                echo '<pre>';
+                    print_r($mang);
+                echo '</pre>';
                 $bt='';
                 foreach ($mang as $key=>$val){
                     $bt=$bt.'<a href=/uploads/'.$this->id.'/'.$val.'>'.Urlseo::thoigian($mang1[$key]).'</a><hr>';
