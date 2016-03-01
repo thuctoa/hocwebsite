@@ -402,6 +402,7 @@
 .banner{
     width: 100%;
     background: white;
+    margin-top: -10px;
 }
 .banner tr td{
     border: 1px solid blue;
