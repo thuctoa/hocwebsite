@@ -409,11 +409,11 @@
     padding-left: 15px;
 }
 .banner tr th{
-    border: 1px solid green;
+    border: 1px solid blue;
     border-collapse: collapse;
 }
 .logo{
     padding: 15px;
     width: 100px;
-    background: rgba(0,0,0,0.9);
+    background: blue;
 }
