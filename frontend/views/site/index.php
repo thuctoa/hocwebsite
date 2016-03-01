@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\LinkPager;
 use common\seo\Urlseo;
-$this->title = Yii::t('app','Học Website');
+$this->title = Yii::t('app',\Yii::$app->name);
 
 ?>
 <div class="row site-index">
@@ -207,28 +207,34 @@ $this->title = Yii::t('app','Học Website');
                      ],
                     ]); ?>
                 </div>
-                <div class="row nentrang tieuchi">
-                    <h3 class="danhsachbaigiang" >Tiêu chí của chúng tôi </h3>
-                    <div class="col-sm-2">
-                        <img src="/favicon.ico" width="100" height="96" alt="<?=$this->title?>"/>
-                        <h1 class="theh1"> <?=\Yii::$app->name?></h1>
-                    </div>
-                    <div class="col-sm-10">
-      
-                        <h2 class="theh2"> 
-                            Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí
-                        </h2>
-                   
-                        <h2 class="theh2"> 
-                            Người học sẽ có được các kiến thức cơ bản về lập trình Website về SEO và bảo mật
-                        </h2>
-                    
-                        <h2 class="theh2"> 
-                            Từ cài đặt phần mềm lập trình đến học Framework và thực hành triển khai một hệ thống trên thực tế
-                        </h2>
-                    
-                    </div>
-                </div>
+                <table class="banner">
+                    <tr>
+                        <th rowspan="3" class="logo">
+                            <img src="/favicon.ico" width="100" height="96" alt="<?=$this->title?>"/>
+                            <h1 class="theh1"> <?=\Yii::$app->name?></h1>
+                        </th>
+                        <td>
+                            <h2 class="theh2"> 
+                                Chỉ với ba tháng với khóa học lập trình bằng ngôn ngữ PHP miễn phí
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="theh2"> 
+                                Người học sẽ có được các kiến thức cơ bản về lập trình Website về SEO và bảo mật
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="theh2"> 
+                                Từ cài đặt phần mềm lập trình đến học Framework và thực hành triển khai một hệ thống trên thực tế
+                            </h2>
+                        </td>
+                    </tr>
+                </table>
+                
             </div>
     <?php
         }?>
