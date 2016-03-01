@@ -79,9 +79,11 @@ class User extends \yii\db\ActiveRecord
     public function getBaitap(){
         Yii::setAlias('@anyname', realpath(dirname(__FILE__).'/../../'));
         $dir = Yii::getAlias('@anyname').'/frontend/web/uploads/'.$this->id;
+        
         if(file_exists($dir)){
             $files=\yii\helpers\FileHelper::findFiles($dir);
             if(!empty($files)){
+                echo $dir;
                 arsort($files);
                 $mang=[];
                 $mang1=[];
