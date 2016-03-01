@@ -20,7 +20,7 @@ class UploadForm extends Model
                 ['imageFiles'], 
                 'file', 
                 'skipOnEmpty' => false, 
-                'extensions' => 'zip,rar', 
+                'extensions' => 'zip', 
                 'maxFiles' => 4,
             ],
         ];
@@ -40,7 +40,7 @@ class UploadForm extends Model
     public function attributeLabels()
     {
         return [
-            'imageFiles' => Yii::t('app', 'Chọn tệp tin nén định dạng zip hoặc rar của bạn'),
+            'imageFiles' => Yii::t('app', 'Chọn tệp tin nén định dạng zip'),
         ];
     }
 }

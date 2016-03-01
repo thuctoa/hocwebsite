@@ -5,6 +5,7 @@
         <group>
             <file>file:/home/projects/hocwebsite/frontend/views/layouts/main.php</file>
             <file>file:/home/projects/hocwebsite/frontend/web/css/dinhkhung.css</file>
+            <file>file:/home/projects/hocwebsite/frontend/controllers/SiteController.php</file>
             <file>file:/home/projects/hocwebsite/backend/controllers/UserController.php</file>
             <file>file:/home/projects/hocwebsite/frontend/views/site/upload.php</file>
             <file>file:/home/projects/hocwebsite/frontend/views/site/index.php</file>
