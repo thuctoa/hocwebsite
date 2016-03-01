@@ -89,12 +89,10 @@ class User extends \yii\db\ActiveRecord
                 $mang1=[];
                 foreach ($files as $key=>$val){
                    $val1=explode("/",$val);
-                   echo '<pre>';
-                    print_r($val1);
-                echo '</pre>';
-                   if(isset($val1[8])){
-                       $mang[]= $val1[8];
-                       $val2=explode("^",$val1[8]);
+                   $cuoival1=  end($val1);
+                   if(isset($cuoival1)){
+                       $mang[]= $cuoival1;
+                       $val2=explode("^",$cuoival1);
                        $mang1[]=$val2[0];
                    }
                 }
