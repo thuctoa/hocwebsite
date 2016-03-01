@@ -89,15 +89,16 @@ class User extends \yii\db\ActiveRecord
                 $mang1=[];
                 foreach ($files as $key=>$val){
                    $val1=explode("/",$val);
+                   echo '<pre>';
+                    print_r($val1);
+                echo '</pre>';
                    if(isset($val1[8])){
                        $mang[]= $val1[8];
                        $val2=explode("^",$val1[8]);
                        $mang1[]=$val2[0];
                    }
                 }
-                echo '<pre>';
-                    print_r($mang);
-                echo '</pre>';
+                
                 $bt='';
                 foreach ($mang as $key=>$val){
                     $bt=$bt.'<a href=/uploads/'.$this->id.'/'.$val.'>'.Urlseo::thoigian($mang1[$key]).'</a><hr>';
