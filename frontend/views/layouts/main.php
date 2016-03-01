@@ -234,7 +234,7 @@ AppAsset::register($this);
                     <li class="fn">Nguyễn Thế Thức </li>
                     <li class="org">Cẩm Nang Toán </li>
                     <li class="tel">0979-846-286</li>
-                    <li><a class="url" href="http://hocwebsite.org/">http://hocwebsite.org/</a></li>
+                    <li><a class="url" href="http://hocwebsite.org/">Website</a></li>
               </ul>
             </div>
             

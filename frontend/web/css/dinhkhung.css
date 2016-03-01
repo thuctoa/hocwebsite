@@ -351,7 +351,7 @@
     width: 300px;
     margin-top: 5px;
     float: left;
-    color: #0a0;
+    color: #767676;
 }
 .danhsachbaigiang{
    padding-left: 10px;
@@ -399,8 +399,12 @@
 .microformats>ul>li{
     float: left;
     padding-right: 10px;
-    color: #0a0;
+    color: #767676;
 }
+.microformats>ul>li>a{
+    color: #767676;
+}
+
 .text-hoc{
     color: blue;
     font-weight:  600;
