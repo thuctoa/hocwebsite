@@ -83,7 +83,9 @@ class User extends \yii\db\ActiveRecord
         if(file_exists($dir)){
             $files=\yii\helpers\FileHelper::findFiles($dir);
             if(!empty($files)){
-                echo $dir;
+                echo '<pre>';
+                    print_r($files);
+                echo '</pre>';
                 arsort($files);
                 $mang=[];
                 $mang1=[];
