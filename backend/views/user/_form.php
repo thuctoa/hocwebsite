@@ -22,8 +22,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'phone_number')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'guibai')->textInput() ?>
-
+    <?php echo $form->field($model, 'guibai')->dropDownList(['0' => 'Chưa gửi', '1' => 'Đã gửi']); ?>
     
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
