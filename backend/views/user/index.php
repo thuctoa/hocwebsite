@@ -37,8 +37,9 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'status',
             // 'created_at',
             // 'updated_at',
-                'baitap:html',
-          //  ['class' => 'yii\grid\ActionColumn'],
+            'baitap:html',
+            'dagui:html',
+            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 

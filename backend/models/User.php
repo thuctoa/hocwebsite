@@ -38,7 +38,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['first_name', 'last_name', 'username', 'auth_key', 'password_hash', 'email', 'phone_number', 'created_at', 'updated_at'], 'required'],
-            [['status', 'created_at', 'updated_at'], 'integer'],
+            [['status', 'created_at','guibai', 'updated_at'], 'integer'],
             [['first_name', 'last_name'], 'string', 'max' => 64],
             [['username', 'password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
             [['auth_key', 'phone_number'], 'string', 'max' => 32],
@@ -66,12 +66,21 @@ class User extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status'),
             'created_at' => Yii::t('app', 'Created At'),
             'updated_at' => Yii::t('app', 'Updated At'),
+            'guibai'=>Yii::t('app', 'Gửi bài'),
         ];
     }
-
+    
     /**
      * @return \yii\db\ActiveQuery
      */
+    
+    public function getDagui(){
+        if($this->guibai==1){
+            return '<img src="/uploads/checkbox.png" width="30" alt="guibai"/>';
+        }else{
+            return "Chưa gửi";
+        }
+    }
     public function getBooks()
     {
         return $this->hasMany(Book::className(), ['user_id' => 'id']);
