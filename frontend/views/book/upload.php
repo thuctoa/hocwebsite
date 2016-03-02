@@ -19,8 +19,10 @@ echo \kato\DropZone::widget([
     foreach ($files as $val){
         $val1=explode("/",$val);
             if(!isset($val1[2])){
+                
     ?>
     <div class="book-anh">
+        <p><?=$val1[1]?></p>
         <a  href="/<?=$val?>">
             <img class="upanhcuthe" src="/<?=$val?>" width="100" height="100"/>
         </a>
