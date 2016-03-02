@@ -78,7 +78,7 @@ class User extends \yii\db\ActiveRecord
         if($this->guibai==1){
             return '<img src="/uploads/checkbox.png" width="30" alt="guibai"/>';
         }else{
-            return "Chưa gửi";
+            return "Chưa được xử lý";
         }
     }
     public function getBooks()
