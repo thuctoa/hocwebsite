@@ -46,13 +46,12 @@ use dosamigos\ckeditor\CKEditor;
             
     <?= $form->field($model, 'description')->textInput() ?>
            
-    <?= $form->field($model, 'body')->widget(CKEditor::className(), [
+    <?= $form->field($model, 'body')->widget(CKEditor::className(), 
+        [
             'options' => ['rows' => 12],
             'preset' => 'full',
-            
-    ]) ?>
-    
-    
+        ]) 
+        ?>
     
     <?= $form->field($model, 'time_new')->textInput(['value'=>time(),'type'=>'hidden'])->label(FALSE) ?>
     

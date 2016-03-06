@@ -14,22 +14,30 @@ echo \kato\DropZone::widget([
    ]);
     $files=\yii\helpers\FileHelper::findFiles('uploads');
 ?>
-    <?php
     
-    foreach ($files as $val){
-        $val1=explode("/",$val);
-            if(!isset($val1[2])){
-                
+    <?php
+    $thoigiananh=[];
+    $tenanh=[];
+    foreach ($files as $key=>$val){
+        $ta=filemtime($val);
+        $thoigiananh[]= $ta;
+        $tenanh[$ta]=$val;
+    }
+    rsort($thoigiananh);
+    foreach ($thoigiananh as $val){
+        $ta=$tenanh[$val];
+        $val1=explode("/",$ta);
+        if(!isset($val1[2])){
     ?>
     <div class="book-anh">
         <p><?=$val1[1]?></p>
-        <a  href="/<?=$val?>">
-            <img class="upanhcuthe" src="/<?=$val?>" width="100" height="100"/>
+        <a  href="/<?=$ta?>">
+            <img class="upanhcuthe" src="/<?=$ta?>" width="100" height="100"/>
         </a>
         <span class="glyphicon glyphicon-remove">
             
         </span>
-        <a  href="/book/removeimg?val=<?=$val?>" onClick="return confirm('Bạn có muốn chắc xóa ảnh này không?')">
+        <a  href="/book/removeimg?val=<?=$ta?>" onClick="return confirm('Bạn có muốn chắc xóa ảnh này không?')">
             Xóa ảnh này
         </a>
     </div>  

@@ -128,9 +128,7 @@ class BookController extends Controller
         if (isset($_FILES[$fileName])) {
             
             $file = \yii\web\UploadedFile::getInstanceByName($fileName);
-            //Print file data
-            // print_r($file);
-            
+           
             if ($file->saveAs($uploadPath . '/' . $file->name)) {
                 //Now save file data to database
                 echo \yii\helpers\Json::encode($file);
