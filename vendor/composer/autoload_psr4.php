@@ -15,6 +15,7 @@ return array(
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
     'yii\\authclient\\' => array($vendorDir . '/yiisoft/yii2-authclient'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
+    'skeeks\\yii2\\ckeditor\\' => array($vendorDir . '/skeeks/yii2-ckeditor'),
     'mdm\\admin\\' => array($vendorDir . '/mdmsoft/yii2-admin'),
     'kato\\' => array($vendorDir . '/perminder-klair/yii2-dropzone'),
     'kartik\\widgets\\' => array($vendorDir . '/kartik-v/yii2-widgets'),

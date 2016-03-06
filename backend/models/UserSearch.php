@@ -18,7 +18,6 @@ class UserSearch extends User
     public function rules()
     {
         return [
-            [['id', 'status', 'created_at','guibai', 'updated_at'], 'integer'],
             [['first_name', 'last_name', 'username', 'email', 'phone_number'], 'safe'],
         ];
     }
@@ -51,26 +50,15 @@ class UserSearch extends User
 
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
-            // $query->where('0=1');
             return $dataProvider;
         }
 
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'first_name' => $this->first_name,
-            'last_name' => $this->last_name,
-            'username' => $this->username,
-            'email' => $this->email,
-            'phone_number' => $this->phone_number,
-            'guibai' => $this->guibai,
-        ]);
-
+        
         $query->andFilterWhere(['like', 'first_name', $this->first_name])
             ->andFilterWhere(['like', 'last_name', $this->last_name])
             ->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'phone_number', $this->phone_number])
-            ->andFilterWhere(['like', 'guibai', $this->guibai]);;
+            ->andFilterWhere(['like', 'phone_number', $this->phone_number]);
 
         return $dataProvider;
     }

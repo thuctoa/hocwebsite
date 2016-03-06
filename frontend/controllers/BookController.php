@@ -97,6 +97,7 @@ class BookController extends Controller
                  $model->img = $imgcu;
             }
             $model->title_seo=Urlseo::convertlink($model->title);
+           
             if($model->save()){
                  return $this->redirect(['/site/index','baiviet'=>$id]);
             }

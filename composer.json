@@ -23,7 +23,8 @@
         "perminder-klair/yii2-dropzone": "dev-master",
         "2amigos/yii2-ckeditor-widget": "~1.0",
         "kartik-v/yii2-widget-growl": "*",
-        "kartik-v/yii2-widgets": "*"
+        "kartik-v/yii2-widgets": "*",
+        "skeeks/yii2-ckeditor": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

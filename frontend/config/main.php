@@ -36,7 +36,7 @@ return [
                         'js/bootstrap.min.js',
                     ]
                 ],
-               // 'yii\widgets\ActiveFormAsset' => false,
+              //  'yii\widgets\ActiveFormAsset' => false,
                // 'yii\validators\ValidationAsset' => false,
                ],
         ],

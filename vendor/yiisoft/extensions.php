@@ -273,4 +273,13 @@ return array (
       '@kartik/widgets' => $vendorDir . '/kartik-v/yii2-widgets',
     ),
   ),
+  'skeeks/yii2-ckeditor' => 
+  array (
+    'name' => 'skeeks/yii2-ckeditor',
+    'version' => '1.0.4.0',
+    'alias' => 
+    array (
+      '@skeeks/yii2/ckeditor' => $vendorDir . '/skeeks/yii2-ckeditor',
+    ),
+  ),
 );

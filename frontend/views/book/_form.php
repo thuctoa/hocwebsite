@@ -4,7 +4,8 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use common\models\User;
-use dosamigos\ckeditor\CKEditor;
+use skeeks\yii2\ckeditor\CKEditorWidget;
+use skeeks\yii2\ckeditor\CKEditorPresets;
 /* @var $this yii\web\View */
 /* @var $model app\models\Book */
 /* @var $form yii\widgets\ActiveForm */
@@ -45,13 +46,12 @@ use dosamigos\ckeditor\CKEditor;
     <?= $form->field($model, 'video')->textInput() ?> 
             
     <?= $form->field($model, 'description')->textInput() ?>
-           
-    <?= $form->field($model, 'body')->widget(CKEditor::className(), 
-        [
-            'options' => ['rows' => 12],
-            'preset' => 'full',
-        ]) 
-        ?>
+            
+    <?= $form->field($model, 'body')->widget(CKEditorWidget::className(), [
+        'options' => ['rows' => 6],
+        'preset' => CKEditorPresets::FULL
+    ]) ?>
+   
     
     <?= $form->field($model, 'time_new')->textInput(['value'=>time(),'type'=>'hidden'])->label(FALSE) ?>
     
