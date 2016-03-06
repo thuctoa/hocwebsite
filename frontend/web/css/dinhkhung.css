@@ -91,7 +91,7 @@
     padding: 8px 16px;
    
 }
-.table-trangchu > thead > tr > th, .table-trangchu > tbody > tr > th, .table-trangchu > tfoot > tr > th, .table-trangchu > thead > tr > td, .table-trangchu > tbody > tr > td, .table > tfoot > tr > td {
+.table-trangchu > thead > tr > th, .table-trangchu > tbody > tr > th, .table-trangchu > tfoot > tr > th, .table-trangchu > thead > tr > td, .table-trangchu > tbody > tr > td, .table-trangchu > tfoot > tr > td {
     border: none;
     padding: 8px 0;
 }
