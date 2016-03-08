@@ -417,3 +417,7 @@
     padding: 15px;
     width: 100px;
 }
+iframe{
+    height: 37.5vw;
+    width: 100%;
+}
