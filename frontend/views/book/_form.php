@@ -41,6 +41,8 @@ use skeeks\yii2\ckeditor\CKEditorPresets;
     <?php
         }
     ?>
+    <?= $form->field($model, 'numpost')->textInput() ?>
+            
     <?= $form->field($model, 'img')->fileInput() ?>
             
     <?= $form->field($model, 'video')->textInput() ?> 

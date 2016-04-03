@@ -421,3 +421,24 @@ iframe{
     height: 37.5vw;
     width: 100%;
 }
+
+#list-learn{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    padding-right:  15px;
+    right: 0;
+    z-index: 10;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+#list-learn ul li{
+    padding: 5px 0;
+    color: #FFF;
+    margin-left: -20px;
+}
+#list-learn a{
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: underline;
+}

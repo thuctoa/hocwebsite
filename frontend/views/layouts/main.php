@@ -219,6 +219,20 @@ AppAsset::register($this);
                 ?>
                 <?php endforeach; ?>
             </div>
+            <div id="list-learn">
+                <ul>
+                    <?php
+                    $oderpots =  Yii::$app->params['numpost'];
+                    $numpost = count($oderpots);
+                    foreach ($oderpots as $value){
+                        
+                    ?>
+                    <li><a href="/<?=$value['title_seo']?>">Bài <?=$value['numpost']?></a></li>
+                    <?php
+                    }
+                    ?>
+                </ul>
+            </div>
             <?= $content ?>
             
         </div>

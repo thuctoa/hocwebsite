@@ -6,7 +6,14 @@ use common\seo\Urlseo;
 $this->title = Yii::t('app',\Yii::$app->name);
 
 ?>
+
 <div class="row site-index">
+    <?php
+                //so bai viet
+                if(isset($numpost)){
+                        Yii::$app->params['numpost'] = $numpost;
+                    }
+                ?>
     <?php 
     if(!empty($baiviet)){
         //share facebook meta image

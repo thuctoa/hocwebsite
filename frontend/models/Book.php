@@ -33,6 +33,7 @@ class Book extends \yii\db\ActiveRecord
         return [
             [['title', 'description'], 'required'], 
             [['user_id'], 'integer'],
+            [['numpost'], 'integer'],
             [['time_new'], 'integer'],
             [['title'], 'string'],
             [['video'], 'string'],
@@ -52,6 +53,7 @@ class Book extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'title' => Yii::t('app', 'Tiêu đề bài viết'),
+            'numpost' => Yii::t('app', 'Bài viết số'),
             'video' => Yii::t('app', 'Link Video nhúng'),
             'description' => Yii::t('app', 'Tóm tắt'),
             'body' => Yii::t('app', 'Nội dung'),

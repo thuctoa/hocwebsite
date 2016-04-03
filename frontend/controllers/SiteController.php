@@ -166,12 +166,18 @@ class SiteController extends Controller
         $models = $query->offset($pages->offset)
         ->limit($pages->limit)
         ->all();
+        $orderposts = Book::find()->orderBy([
+	       'numpost'=>SORT_ASC,
+		])->all();
+       
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'baiviet'=>$baiviet,
             'models' => $models,
             'pages' => $pages,
+            'numpost' => $orderposts,
+            
         ]);
     }
     public function actionUpload()
