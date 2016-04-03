@@ -426,6 +426,7 @@ iframe{
     position: absolute;
     background: rgba(0, 0, 0, 0.3);
     padding-right:  15px;
+    top:30vh;
     right: 0;
     z-index: 10;
     border-radius: 4px;
