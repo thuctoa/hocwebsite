@@ -225,10 +225,11 @@ AppAsset::register($this);
                     $oderpots =  Yii::$app->params['numpost'];
                     $numpost = count($oderpots);
                     foreach ($oderpots as $value){
-                        
-                    ?>
-                    <li><a href="/<?=$value['title_seo']?>">Bài <?=$value['numpost']?></a></li>
-                    <?php
+                        if($value['numpost']!=0){
+                        ?>
+                            <li><a href="/<?=$value['title_seo']?>">Bài <?=$value['numpost']?></a></li>
+                        <?php
+                        }
                     }
                     ?>
                 </ul>
