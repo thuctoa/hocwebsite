@@ -18,6 +18,8 @@ $this->title = Yii::t('app',\Yii::$app->name);
     if(!empty($baiviet)){
         //share facebook meta image
         \Yii::$app->params['baiviet']=$baiviet;
+        //xac dinh vi tri bai viet
+        \Yii::$app->params['viewpost']=$baiviet['numpost'];
         $id=$baiviet['id'];
         $this->title = $baiviet['title'];
     ?>

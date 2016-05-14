@@ -15,7 +15,7 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-    <meta name="robots" content="noindex, nofollow, noodp, noydir" />
+    
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="google-site-verification" content="sw1f1qIH5NbeJeIBhO7KfjoVtl0eUEExLmHUYGFakhE" />
     <meta name="p:domain_verify" content="949a682ec68ca427fee6248382a00e08"/>
@@ -226,9 +226,15 @@ AppAsset::register($this);
                     $numpost = count($oderpots);
                     foreach ($oderpots as $value){
                         if($value['numpost']!=0){
+                            if(Yii::$app->params['viewpost'] == $value['numpost']){
+                        ?>
+                        <li style="background: rgba(255, 255, 255,0.5);"><a href="/<?=$value['title_seo']?>">Bài <?=$value['numpost']?></a></li>
+                        <?php
+                            }else{
                         ?>
                             <li><a href="/<?=$value['title_seo']?>">Bài <?=$value['numpost']?></a></li>
-                        <?php
+                        <?php        
+                            }
                         }
                     }
                     ?>
